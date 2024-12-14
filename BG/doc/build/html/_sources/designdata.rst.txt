@@ -1,4 +1,4 @@
-Design data and design process description
+﻿Design data and design process description
 ############################################
 
 Xschem schematics:

@@ -1,27 +1,27 @@
-CMOS only designs
+﻿CMOS only designs
 #################
 
 
-this is a chip to test the following circtuis:
+this is a chip to test the following circuits:
 
 1. an 3.3V OTA 
-    - an input commonmod rage starting from < VSS untle VDD - 500mV
+    - an input common-mode-range from < VSS until VDD - 500mV
     - bias current programmable via resistor
     - gain about 70dB
     - offset in < 5mV
 2. a band gap design using this OTA.
-    - option to make an lowpass
+    - option to make an low-pass
     - option to adjust the delta temperature coefficient zero
 3. a shunt-regulator for 3.3V
     - should heat until 50mA
-    - option to desable and measure the shunt current
+    - option to disable and measure the shunt current
 4. a high dropout 1.8V regulator
     - should be powered by the 3.3V
     - low output impedance
-    - high power supply rectection
+    - high power supply rejection
 5. two different mmW detector designs
-    - dipol/diode detector
-    - a 1 diode desing as reference of a
+    - dipole/diode detector
+    - a 1 diode design as reference of a
     - 10 serial connected diode design
 6. iHPs standard IO-cells for analog signal, VSS, VDD and IOVSS, IOVDD
 7. a shottky diode, for measurments

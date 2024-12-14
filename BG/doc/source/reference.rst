@@ -1,9 +1,9 @@
-
+﻿
 ******************
 band gap reference
 ******************
 
-the shunt-regulator has to limmit the supply-voltage to 3.3V. it should be usable to 50mA.
+the shunt-regulator has to limit the supply-voltage to 3.3V. it should be usable to 50mA.
 
 SCHEMATiC
 
@@ -23,4 +23,4 @@ SiMULATiON
 LVS
 ***
 
-LVS wasnt working. and there are differencies between layout and schematics
+LVS wasn't working. and there are differences between layout and schematics
