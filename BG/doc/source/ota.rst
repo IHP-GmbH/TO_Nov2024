@@ -4,7 +4,7 @@ high voltage OTA
 1.1. the OTA
 the circuit should be used with iHPs PNP-device pnpMPA, so it should be working from VSS. this called for an PMOS input. the design is a simplified version of
 :download:`The Recycling Folded Cascode: A General
-Enhancement of the Folded Cascode Amplifier <https://sci-hub.ru/10.1109/JSSC.2009.2024819>`
+Enhancement of the Folded Cascode Amplifier <https://e-tarjome.com/storage/btn_uploaded/2020-01-28/1580199478_9065-etarjome%20English.pdf>`
 
 because of the used CMOS-process the PMOS transistors could have an isolated bulk, without special effort. the simulations showed that the isolated versions had a bigger gain, but a smaller common-mode-range, and i preferred the later.
 the bias-current is programmable an so also the band-width. the bias-voltages should allow wide-swing output voltages.
