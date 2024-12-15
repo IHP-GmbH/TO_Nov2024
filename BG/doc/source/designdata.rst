@@ -1,7 +1,23 @@
-﻿Design data and design process description
-############################################
+﻿##########################################
+design data and design process description
+##########################################
+
+iHP 130nm BiCMOS process sg13g2
+###############################
+
+the process is useable via iHPs openPDK:
+
+source
+https://github.com/IHP-GmbH/IHP-Open-PDK
+
+documentation
+https://ihp-open-pdk-docs.readthedocs.io/en/latest/index.html
+
+open-source runs:
+https://www.ihp-microelectronics.com/services/research-and-prototyping-service/fast-design-enablement/open-source-pdk
 
 Xschem schematics:
+#######
 
 .. list-table:: 
    :header-rows: 1
@@ -19,6 +35,7 @@ Xschem schematics:
      - symbols for Xschem schematics
 
 KLayout .GDS:
+#######
 
 .. list-table:: 
    :header-rows: 1

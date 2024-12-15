@@ -1,4 +1,5 @@
-﻿CMOS only designs
+﻿#################
+CMOS only designs
 #################
 
 
@@ -29,13 +30,13 @@ this is a chip to test the following circuits:
 
 
 pinout
-******
+########################
 
 .. image:: _static/pinout.svg
     :align: center
 
 signals
-*******
+########################
 
 .. list-table::
    :header-rows: 1

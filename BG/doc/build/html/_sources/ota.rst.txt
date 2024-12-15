@@ -1,5 +1,6 @@
+################
 high voltage OTA
-#################
+################
 
 1.1. the OTA
 the circuit should be used with iHPs PNP-device pnpMPA, so it should be working from VSS. this called for an PMOS input. the design is a simplified version of
@@ -11,16 +12,19 @@ the bias-current is programmable an so also the band-width. the bias-voltages sh
 in the space the circuit uses are 3 MiM-capacitors placed. they are intended to use for frequency-compensation or as power-rail decoupling.
 
 OTA 
+###
 
 .. image:: _static/OTA3C.svg
     :align: center
 
-BiAS VOLTAGE
+bias generator
+############
 
 .. image:: _static/OTA33_BiAS.svg
     :align: center
 
-LAYOUT
+layout
+######
 
 .. image:: _static/OTA_layout.png
     :align: center
@@ -29,7 +33,8 @@ LAYOUT
 
 
 
-SiMULATiONs
+simulations
+########################
 
 using different bias-currents of 1, 3 and 10µA a few simulations are printed into a PDF that allow to see the gain, common-mode-range, bandwidth and a slew-rate:
 
@@ -38,6 +43,6 @@ using different bias-currents of 1, 3 and 10µA a few simulations are printed in
 the schematics of this simulations is :download:`Xschem document <../../design_data/xschem/simulations/OTA33_test_mc_xyce_01.Xsch>`
 
 ETHZ feedback
-*************
+########################
 
 its a bit stupid to design OTAs that fit in a square, if there is no such space-requirement. the layout should be changed to minimize the conductor-length of the signals between the differential-stage and the current-mirrors.

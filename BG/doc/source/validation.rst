@@ -1,6 +1,5 @@
-Validation  of the Amazing Design
+validation sometime in the farfar future
 #################################
 
 
-Document the measurement results here.
-
+i cant wait...
