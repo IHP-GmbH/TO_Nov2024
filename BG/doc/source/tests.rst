@@ -3,10 +3,10 @@
 experiments
 ########################
 
-test shottky diode
+test schottky diode
 ########################
 
-to measure the shottky-diode used in the mmW-detectors, a device is connected to bond-pads outside the power-ring.
+to measure the schottky-diode used in the mmW-detectors, a device is connected to bond-pads outside the power-ring.
 
 fuse
 ########################

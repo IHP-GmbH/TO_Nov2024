@@ -35,7 +35,7 @@ but that's also the only clean part on this chip from my perspective. its highly
 the sg13g2 process
 ******************
 
-there are two kinds of GateOxydes: thick for high-voltage like 3.3V circuits and standard for 1.2..1.8V circuits. there are three different SiGe BjTs, but all are NPNs. while the Si-parasitic transistors are only PNP.
+there are two kinds of GateOxyde: thick for high-voltage like 3.3V circuits and standard for 1.2..1.8V circuits. there are three different SiGe BjTs, but all are NPNs. while the Si-parasitic transistors are only PNP.
 
 
 

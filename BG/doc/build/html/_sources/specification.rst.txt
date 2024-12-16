@@ -6,7 +6,7 @@ CMOS only designs
 this is a chip to test the following circuits:
 
 1. an 3.3V OTA 
-    - an input common-mode-range from < VSS until VDD - 500mV
+    - an input common-mode-range from < VSS to VDD - 500mV
     - bias current programmable via resistor
     - gain about 70dB
     - offset in < 5mV
@@ -25,8 +25,8 @@ this is a chip to test the following circuits:
     - a 1 diode design as reference of a
     - 10 serial connected diode design
 6. iHPs standard IO-cells for analog signal, VSS, VDD and IOVSS, IOVDD
-7. a shottky diode, for measurments
-8. a fuse/resistor combination to test the posiblitiy of fuse-trimming
+7. a schottky diode, for measurements
+8. a fuse/resistor combination to test the possibility of fuse-trimming
 
 
 pinout
@@ -48,18 +48,18 @@ signals
    * - fuse
      - fuse experiment
    * - det         
-     - dipol detector
+     - dipole detector
    * - det10       
-     - 10x serial dipol detectors
-   * - shottky     
+     - 10x serial dipole detectors
+   * - schottky     
      - test-diode
 
    * - OTA+        
-     - noninverting OTA input
+     - non-inverting OTA input
    * - OTA-        
      - inverting OTA input
    * - OTAo        
-     - OTA ouput
+     - OTA output
 
    * - shuntGND    
      - shunt-regulators VSS connection. can be used to measure the current
@@ -75,10 +75,10 @@ signals
    * - bias in     
      - resistor from IOVDD sets the bias-currents of all OTAs
    * - ref out     
-     - bandgap voltage - high impedace output and regulator ref input. lowpass possible.
+     - band-gap voltage - high impedance output and regulator ref input. low-pass possible.
    * - ref cur     
      - reference current source from IOVDD
    * - ref adj     
-     - resistor to IOVDD or IOVSS to trim the zero of the temperature coefficent
+     - resistor to IOVDD or IOVSS to trim the zero of the temperature coefficient
 
 

@@ -88,7 +88,7 @@
 <ol class="arabic simple">
 <li><dl class="simple">
 <dt>an 3.3V OTA</dt><dd><ul class="simple">
-<li><p>an input common-mode-range from &lt; VSS until VDD - 500mV</p></li>
+<li><p>an input common-mode-range from &lt; VSS to VDD - 500mV</p></li>
 <li><p>bias current programmable via resistor</p></li>
 <li><p>gain about 70dB</p></li>
 <li><p>offset in &lt; 5mV</p></li>
@@ -131,8 +131,8 @@
 </dl>
 </li>
 <li><p>iHPs standard IO-cells for analog signal, VSS, VDD and IOVSS, IOVDD</p></li>
-<li><p>a shottky diode, for measurments</p></li>
-<li><p>a fuse/resistor combination to test the posiblitiy of fuse-trimming</p></li>
+<li><p>a schottky diode, for measurements</p></li>
+<li><p>a fuse/resistor combination to test the possibility of fuse-trimming</p></li>
 </ol>
 <section id="pinout">
 <h2>pinout<a class="headerlink" href="#pinout" title="Link to this heading"></a></h2>
@@ -151,22 +151,22 @@
 <td><p>fuse experiment</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>det</p></th>
-<td><p>dipol detector</p></td>
+<td><p>dipole detector</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>det10</p></th>
-<td><p>10x serial dipol detectors</p></td>
+<td><p>10x serial dipole detectors</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>shottky</p></th>
+<tr class="row-odd"><th class="stub"><p>schottky</p></th>
 <td><p>test-diode</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>OTA+</p></th>
-<td><p>noninverting OTA input</p></td>
+<td><p>non-inverting OTA input</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>OTA-</p></th>
 <td><p>inverting OTA input</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>OTAo</p></th>
-<td><p>OTA ouput</p></td>
+<td><p>OTA output</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>shuntGND</p></th>
 <td><p>shunt-regulators VSS connection. can be used to measure the current</p></td>
@@ -187,13 +187,13 @@
 <td><p>resistor from IOVDD sets the bias-currents of all OTAs</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>ref out</p></th>
-<td><p>bandgap voltage - high impedace output and regulator ref input. lowpass possible.</p></td>
+<td><p>band-gap voltage - high impedance output and regulator ref input. low-pass possible.</p></td>
 </tr>
 <tr class="row-even"><th class="stub"><p>ref cur</p></th>
 <td><p>reference current source from IOVDD</p></td>
 </tr>
 <tr class="row-odd"><th class="stub"><p>ref adj</p></th>
-<td><p>resistor to IOVDD or IOVSS to trim the zero of the temperature coefficent</p></td>
+<td><p>resistor to IOVDD or IOVSS to trim the zero of the temperature coefficient</p></td>
 </tr>
 </tbody>
 </table>
