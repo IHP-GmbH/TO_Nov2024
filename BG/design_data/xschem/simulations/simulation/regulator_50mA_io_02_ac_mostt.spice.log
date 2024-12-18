@@ -1,0 +1,54 @@
+
+*****
+***** Welcome to the Xyce(TM) Parallel Electronic Simulator
+*****
+***** This is version Xyce DEVELOPMENT-202409220015-(Public_Release-7.8.0-128-g5b74b0d5)-opensource
+***** Date: Fri Dec 13 17:17:44 CET 2024
+
+
+***** Executing netlist /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/simulation/regulator_50mA_io_02_ac_mostt.spice
+
+***** Reading and parsing netlist...
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 212
+ No model parameter MUNQSO found for model SG13G2_HV_PMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 212
+ No model parameter SWNQS found for model SG13G2_HV_PMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 62
+ No model parameter MUNQSO found for model SG13G2_HV_NMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 62
+ No model parameter SWNQS found for model SG13G2_HV_NMOS_PSP of type
+ PSP103_VA, parameter ignored.
+***** Setting up topology...
+
+Netlist warning: Voltage Node (VSS) does not have a DC path to ground
+Netlist warning: Voltage Node (NET17) does not have a DC path to ground
+Netlist warning: Voltage Node (NET18) does not have a DC path to ground
+***** Device Count Summary ...
+       C level 1 (Capacitor)                    6
+       D level 1,2 (Diode)                     84
+       I level 1 (Independent Current Source)   1
+       PSP103_VA level 1 (ADMS PSP103_VA)     734
+       R level 1 (Resistor)                   138
+       V level 1 (Independent Voltage Source)  32
+       ------------------------------------------
+       Total Devices                          995
+***** Setting up matrix structure...
+***** Number of Unknowns = 2279
+***** Initializing...
+
+Netlist error: Solving for DC operating point failed! Cannot continue AC
+ analysis
+Simulation aborted due to error.  There are 0 MSG_FATAL errors and 1 MSG_ERROR
+ errors
+*** Xyce Abort ***

@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.1 file_version=1.2
 }
 G {}
 K {type=primitive
@@ -25,5 +25,5 @@ B 5 17.5 37.5 22.5 42.5 {name=6 sig_type=std_logic dir=in }
 T {@symname} -58.5 -16 0 0 0.3 0.3 {}
 T {@name} -55 -62 0 0 0.2 0.2 {}
 T {OUT} 45 -4 0 1 0.2 0.2 {}
-T {VSS} -30 20 0 0 0.2 0.2 {}
-T {VDD} -30 -30 0 0 0.2 0.2 {}
+T {VSS} -35 21 0 0 0.2 0.2 {}
+T {VCC} -30 -29 0 0 0.2 0.2 {}

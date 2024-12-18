@@ -1,0 +1,178 @@
+** sch_path: /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/BG18_rppd_io.sch
+**.subckt BG18_rppd_io
+VDD VDD GND 3.3 ac 1 0
+Vzero 0 GND 0
+x1 VDD net11 net10 GND gates net1 gates gates gates VDD OTA3C nw=1e-06 nl=1e-06 pw=2e-06 pl=1e-06
+XM11 net8 gates VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XM14 net5 gates VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XM2 net7 gates VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XQ1 net2 net2 net5 pnpMPA
+Vmeas7 net2 GND 0
+Vmeas10 net3 GND 0
+Vmeas11 net4 GND 0
+Vmeas12 net6 GND 0
+XQ12 net9 net9 mpa10 pnpMPA
+Vmeas9 net9 GND 0
+XQ3 net9 net9 mpa10 pnpMPA
+XQ5 net9 net9 mpa10 pnpMPA
+XQ6 net9 net9 mpa10 pnpMPA
+XQ7 net9 net9 mpa10 pnpMPA
+XQ8 net9 net9 mpa10 pnpMPA
+XQ9 net9 net9 mpa10 pnpMPA
+XQ10 net9 net9 mpa10 pnpMPA
+XQ11 net9 net9 mpa10 pnpMPA
+XM4 net14 gates VDD VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+Vzero1 net11 mpa2 {offset/2}
+Vzero2 mpa1 net10 {offset/2}
+XM1 gates net12 GND VSS sg13_hv_nmos w=1e-06 l=1e-05 ng=1
+XM3 net1 net12 GND VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+XM5 net12 net12 GND VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+XR1 mpa10 net8 rppd w=1e-6 l=45e-6 m=1 b=0
+XR2 mpa1 net4 rppd w=1e-6 l=300e-6 m=1 b=0
+XR3 mpa2 net8 rppd w=1e-6 l=6e-6 m=1 b=0
+XR4 mpa1 net5 rppd w=1e-6 l=6e-6 m=1 b=0
+XR5 mpa2 net3 rppd w=1e-6 l=300e-6 m=1 b=0
+XR6 net7 net6 rppd w=1e-6 l=400e-6 m=1 b=0
+Xx2 GND VDDL GND VDD sg13g2_IOPadIOVdd
+XX3 GND VDDL GND VDD sg13g2_IOPadIOVss
+Xx4 GND VDDL GND VDD sg13g2_IOPadVdd
+XX5 GND VDDL GND VDD sg13g2_IOPadVss
+Xx6 GND VDDL GND VDD net13 net12 sg13g2_IOPadAnalog
+I1 VDD net13 {iset}
+Xx7 GND VDDL GND VDD OUT1 net14 sg13g2_IOPadAnalog
+Xx8 GND VDDL GND VDD OUT net7 sg13g2_IOPadAnalog
+Xx9 GND VDDL GND VDD ADJ net15 sg13g2_IOPadAnalog
+XR9 net8 net15 rppd w=1e-6 l=6e-6 m=1 b=0
+**** begin user architecture code
+
+
+
+
+
+
+
+* schematic: BG18_rppd_io
+* dir:       /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations
+* test:      /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA33_BiAS.sym
+
+* mos_corner:
+* mos_corner:
+
+
+
+
+
+
+* .option temp=27
+
+
+.lib /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/cornerRES.lib     res_typ
+.lib /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/cornerCAP.lib     cap_typ
+
+.lib /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/cornerMOShv.lib   mos_tt
+.lib /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/cornerMOSlv.lib   mos_tt
+.lib /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/cornerHBT.lib     hbt_typ
+
+.include /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/diodes.lib
+.include /home/ich/share/pdk/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi
+
+
+.param nw=1e-6
+.param nl=1e-6
+.param pw=2e-6
+.param pl=1e-6
+.param iset=0
+.param offset=0
+
+.step dec iset 1u 10u 3
+.step offset -5m 5m 5m
+
+.dc temp -50 150 10
+.print dc format=raw file=/ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/simulation/BG18_rppd_io_temp_mostt.raw v(*) i(*)
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA3C.sym # of pins=10
+** sym_path: /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA3C.sym
+** sch_path: /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA3C.sch
+.subckt OTA3C VDD ip in VSS op sink C1 C3 C2 CGND  nw=1u nl=1u pw=2u pl=1u
+*.ipin in
+*.iopin VSS
+*.iopin VDD
+*.iopin sink
+*.ipin ip
+*.opin op
+*.iopin C1
+*.iopin C2
+*.iopin C3
+*.iopin CGND
+XM1 net10 net18 net2 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+XM2 net9 net17 net2 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+Vmeas3 VDD net4 0
+XM3 net10 net10 net1 VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+XM4 net7 net10 net3 VSS sg13_hv_nmos w=2e-06 l=1e-06 ng=2
+Vmeas8 net3 VSS 0
+Vmeas9 net1 VSS 0
+XM5 net8 V++ net4 VDD sg13_hv_pmos w=8e-06 l=1e-06 ng=2
+**** begin user architecture code
+
+
+**** end user architecture code
+XM6 net2 V+ net8 VDD sg13_hv_pmos w=8e-06 l=1e-06 ng=2
+XM7 net16 net9 net6 VSS sg13_hv_nmos w=2e-06 l=1e-06 ng=2
+XM8 net9 net9 net5 VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+Vmeas10 net5 VSS 0
+Vmeas11 net6 VSS 0
+XM9 net7 net17 net2 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+XM10 net16 net18 net2 VDD sg13_hv_pmos w=2.4e-05 l=2e-06 ng=5 m=2
+Vmeas2 VDD net11 0
+XM11 net14 net15 net11 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XM12 op V+ net14 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XM13 op V- net7 VSS sg13_hv_nmos w=1.5975e-05 l=1e-06 ng=9
+Vmeas5 VDD net12 0
+XM14 net13 net15 net12 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XM15 net15 V+ net13 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=1
+XM16 net15 V- net16 VSS sg13_hv_nmos w=1.5975e-05 l=1e-06 ng=9
+x12 net19 sink V++ V+ V- V-- net20 OTA33_BiAS nw=1e-06 nl=1e-06 pw=2e-06 pl=1e-06
+Vmeas1 net20 VSS 0
+Vmeas4 VDD net19 0
+R14 ip net18 1
+R11 net17 in 1
+XC2 C3 CGND cap_cmim w=9.0e-6 l=30.0e-6
+XC3 C2 CGND cap_cmim w=9.0e-6 l=30.0e-6
+XC4 C1 CGND cap_cmim w=9.0e-6 l=30.0e-6
+.ends
+
+
+* expanding   symbol:  /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA33_BiAS.sym # of pins=7
+** sym_path: /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA33_BiAS.sym
+** sch_path: /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/OTA33_BiAS.sch
+.subckt OTA33_BiAS VDD sink V++ V+ V- V-- VSS  nw=1u nl=1u pw=2u pl=1u
+*.iopin VSS
+*.iopin VDD
+*.iopin sink
+*.iopin V++
+*.iopin V+
+*.iopin V-
+*.iopin V--
+XM1 net4 V+ net2 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+Vmeas4 VDD net7 0
+Vmeas6 net1 VSS 0
+XM2 net3 V-- net1 VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+XM3 V-- V- net3 VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+XM4 net2 V++ net7 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+XM5 V- net4 V-- VSS sg13_hv_nmos w=1e-06 l=1e-06 ng=1
+XM6 net4 net4 V- VSS sg13_hv_nmos w=1e-06 l=2e-06 ng=1
+XM7 V++ V+ net5 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+XM8 net5 V++ net6 VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+XM9 sink sink V+ VDD sg13_hv_pmos w=2e-06 l=2e-06 ng=1
+XM10 V+ sink V++ VDD sg13_hv_pmos w=2e-06 l=1e-06 ng=2
+Vmeas9 VDD net6 0
+.ends
+
+.GLOBAL GND
+.end

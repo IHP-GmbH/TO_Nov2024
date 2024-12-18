@@ -1,0 +1,169 @@
+
+*****
+***** Welcome to the Xyce(TM) Parallel Electronic Simulator
+*****
+***** This is version Xyce DEVELOPMENT-202409220015-(Public_Release-7.8.0-128-g5b74b0d5)-opensource
+***** Date: Fri Dec 13 17:41:48 CET 2024
+
+
+***** Executing netlist /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/simulation/BG18_rppd_io_dc_mostt.spice
+
+***** Reading and parsing netlist...
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 212
+ No model parameter MUNQSO found for model SG13G2_HV_PMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 212
+ No model parameter SWNQS found for model SG13G2_HV_PMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 62
+ No model parameter MUNQSO found for model SG13G2_HV_NMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 62
+ No model parameter SWNQS found for model SG13G2_HV_NMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_hbt_mod.lib at or
+ near line 425
+ No model parameter TRM1 found for model PNPMPA_MOD of type PNP, parameter
+ ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_hbt_mod.lib at or
+ near line 425
+ No model parameter TRM2 found for model PNPMPA_MOD of type PNP, parameter
+ ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_hbt_mod.lib at or
+ near line 425
+ No model parameter TRC1 found for model PNPMPA_MOD of type PNP, parameter
+ ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_hbt_mod.lib at or
+ near line 425
+ No model parameter TRC2 found for model PNPMPA_MOD of type PNP, parameter
+ ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_hbt_mod.lib at or
+ near line 425
+ No model parameter TRE1 found for model PNPMPA_MOD of type PNP, parameter
+ ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_hbt_mod.lib at or
+ near line 425
+ No model parameter TRE2 found for model PNPMPA_MOD of type PNP, parameter
+ ignored.
+***** Setting up topology...
+
+Netlist warning: Voltage Node (VSS) does not have a DC path to ground
+***** Device Count Summary ...
+       C level 1 (Capacitor)                      3
+       D level 1,2 (Diode)                      102
+       I level 1 (Independent Current Source)     1
+       PSP103_VA level 1 (ADMS PSP103_VA)       769
+       Q level 1 (Bipolar Junction Transistor)   10
+       R level 1 (Resistor)                     147
+       V level 1 (Independent Voltage Source)    21
+       --------------------------------------------
+       Total Devices                           1053
+***** Setting up matrix structure...
+***** Number of Unknowns = 2373
+***** Initializing...
+
+
+***** Solution Summary *****
+	Number Successful Steps Taken:		396
+	Number Failed Steps Attempted:		48
+	Number Jacobians Evaluated:		653395
+	Number Linear Solves:			653395
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		666961
+	Number Nonlinear Convergence Failures:	48
+	Total Residual Load Time:		4336.32 seconds
+	Total Jacobian Load Time:		386.464 seconds
+	Total Linear Solution Time:		237.516 seconds
+
+	Failed DC sweep steps:		
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+		DC Step # 2
+		DC Step # 3
+		DC Step # 4
+		DC Step # 5
+
+***** Total Simulation Solvers Run Time: 5184.74 seconds
+***** Total Elapsed Run Time:            5187.37 seconds
+*****
+***** End of Xyce(TM) Simulation
+*****
+
+Timing summary of 1 processor
+                 Stats                   Count        CPU Time              Wall Time
+---------------------------------------- ------ --------------------- ---------------------
+Xyce                                          1  1:25:51.831 (100.0%)  1:26:27.368 (100.0%)
+  Analysis                                    1  1:25:49.320 (99.95%)  1:26:24.744 (99.95%)
+    Step                                      1  1:25:49.320 (99.95%)  1:26:24.744 (99.95%)
+      DC Sweep                               12  1:25:49.305 (99.95%)  1:26:24.728 (99.95%)
+        Solve                               444  1:25:48.991 (99.94%)  1:26:24.406 (99.94%)
+          Residual                       666961  1:11:50.027 (83.66%)  1:12:19.028 (83.65%)
+          Jacobian                       653395     6:24.876 ( 7.47%)     6:28.372 ( 7.49%)
+          Linear Solve                   653395     3:56.587 ( 4.59%)     3:58.703 ( 4.60%)
+        Successful Step                     396        0.159 (<0.01%)        0.163 (<0.01%)
+        Failed Steps                         48        0.000 (<0.01%)        0.000 (<0.01%)
+  Netlist Import                              1        2.306 ( 0.04%)        2.395 ( 0.05%)
+    Parse Context                             1        0.018 (<0.01%)        0.019 (<0.01%)
+    Distribute Devices                        1        2.242 ( 0.04%)        2.323 ( 0.04%)
+    Verify Devices                            1        0.000 (<0.01%)        0.000 (<0.01%)
+    Instantiate                               1        0.045 (<0.01%)        0.051 (<0.01%)
+  Late Initialization                         1        0.200 (<0.01%)        0.224 (<0.01%)
+    Global Indices                            1        0.010 (<0.01%)        0.011 (<0.01%)
+  Setup Matrix Structure                      1        0.013 (<0.01%)        0.015 (<0.01%)
+
