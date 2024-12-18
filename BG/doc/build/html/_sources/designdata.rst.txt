@@ -17,7 +17,7 @@ open-source runs:
 https://www.ihp-microelectronics.com/services/research-and-prototyping-service/fast-design-enablement/open-source-pdk
 
 Xschem schematics:
-#######
+###############################
 
 .. list-table:: 
    :header-rows: 1
@@ -35,7 +35,7 @@ Xschem schematics:
      - symbols for Xschem schematics
 
 KLayout .GDS:
-#######
+###############################
 
 .. list-table:: 
    :header-rows: 1

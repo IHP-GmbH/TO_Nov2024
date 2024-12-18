@@ -12,4 +12,5 @@ layout
 .. image:: _static/detectors.png
     :align: center
 
+\
 

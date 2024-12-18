@@ -3,10 +3,17 @@
 CMOS only BiCMOS chip ;)
 ************************
 
+.. warning::
+    this chip is mostly done using an unfinished PDK. LVS was done only for parts.
+
+.. image:: _static/CMOS_chip.png
+    :align: center
+
+\
 
 .. toctree::
-    :hidden:
-    
+    :hidden: 
+
     specification
     ota
     reference
@@ -17,13 +24,9 @@ CMOS only BiCMOS chip ;)
     designdata
     validation
 
-.. warning::
-    this chip is mostly done using an unfinished PDK. LVS was done only for parts.
+.. only:: latex
 
-.. image:: _static/CMOS_chip.png
-    :align: center
-
-\
+    .. contents::
 
 background
 **********

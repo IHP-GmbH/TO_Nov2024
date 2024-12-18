@@ -8,8 +8,15 @@ the shunt-regulator has to limit the supply-voltage to 3.3V. it should be usable
 schematic
 #########
 
-.. image:: _static/bg.svg
-    :align: center
+.. only:: html
+
+    .. image:: _static/bg.svg
+        :align: center
+
+.. only:: latex
+    
+    .. image:: _static/bg.eps
+        :align: center
 
 layout
 ######

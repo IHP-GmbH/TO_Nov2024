@@ -1,0 +1,35 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}CMOS only designs}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}pinout}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}signals}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}high voltage OTA}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}OTA}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}bias generator}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}layout}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}simulations}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}ETHZ feedback}{8}{section.2.5}%
+\contentsline {chapter}{\numberline {3}band gap reference}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}schematic}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}layout}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}simulation}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}LVS}{10}{section.3.4}%
+\contentsline {chapter}{\numberline {4}voltage\sphinxhyphen {}regulators}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}shunt\sphinxhyphen {}regulator}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}serial\sphinxhyphen {}regulator}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}schematic}{11}{section.4.3}%
+\contentsline {section}{\numberline {4.4}layout}{12}{section.4.4}%
+\contentsline {section}{\numberline {4.5}simulations}{12}{section.4.5}%
+\contentsline {section}{\numberline {4.6}LVS}{12}{section.4.6}%
+\contentsline {chapter}{\numberline {5}iHPs IO\sphinxhyphen {}CELLs}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}mmW diode detectors}{15}{chapter.6}%
+\contentsline {section}{\numberline {6.1}layout}{15}{section.6.1}%
+\contentsline {chapter}{\numberline {7}experiments}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}test schottky diode}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.2}fuse}{17}{section.7.2}%
+\contentsline {chapter}{\numberline {8}design data and design process description}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}iHP 130nm BiCMOS process sg13g2}{19}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Xschem schematics:}{19}{section.8.2}%
+\contentsline {section}{\numberline {8.3}KLayout .GDS:}{19}{section.8.3}%
+\contentsline {chapter}{\numberline {9}validation sometime in the farfar future}{21}{chapter.9}%
+\contentsline {chapter}{\numberline {10}background}{23}{chapter.10}%
+\contentsline {chapter}{\numberline {11}the sg13g2 process}{25}{chapter.11}%

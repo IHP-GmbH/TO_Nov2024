@@ -14,14 +14,28 @@ in the space the circuit uses are 3 MiM-capacitors placed. they are intended to 
 OTA 
 ###
 
-.. image:: _static/OTA3C.svg
-    :align: center
+.. only:: html
+
+    .. image:: _static/OTA3C.svg
+        :align: center
+
+.. only:: latex
+    
+    .. image:: _static/OTA3C.eps
+        :align: center
 
 bias generator
-############
+########################
 
-.. image:: _static/OTA33_BiAS.svg
-    :align: center
+.. only:: html
+
+    .. image:: _static/OTA33_BiAS.svg
+        :align: center
+
+.. only:: latex
+    
+    .. image:: _static/OTA33_BiAS.eps
+        :align: center
 
 layout
 ######

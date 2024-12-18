@@ -32,8 +32,15 @@ this is a chip to test the following circuits:
 pinout
 ########################
 
-.. image:: _static/pinout.svg
-    :align: center
+.. only:: html
+
+    .. image:: _static/pinout.svg
+        :align: center
+
+.. only:: latex
+    
+    .. image:: _static/pinout.eps
+        :align: center
 
 signals
 ########################

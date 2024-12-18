@@ -17,8 +17,15 @@ the serial regulator should produce 1.8V for low-voltage MOSFETs. the OTA respon
 schematic
 #########
 
-.. image:: _static/regs.svg
-    :align: center
+.. only:: html
+
+    .. image:: _static/regs.svg
+        :align: center
+
+.. only:: latex
+    
+    .. image:: _static/regs.eps
+        :align: center
 
 layout
 ######
