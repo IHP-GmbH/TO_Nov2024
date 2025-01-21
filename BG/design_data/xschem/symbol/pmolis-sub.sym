@@ -1,16 +1,15 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {type=nmos
-lvs_format="@name @pinlist @substrate @model w=@w l=@l m=@m ng=@ng"
+lvs_format="@name @pinlist @model w=@w l=@l m=@m ng=@ng"
 format="@spiceprefix@name @pinlist @substrate @model w=@w l=@l ng=@ng m=@m"
 template="name=M1
-L=0.45u
-W=1.0u
+l=0.45u
+w=1.0u
 ng=1
 m=1
 substrate=VDD
-model=sg13_lv_nmos
+model=sg13_lv_pmos
 spiceprefix=X
 "}
 V {}
