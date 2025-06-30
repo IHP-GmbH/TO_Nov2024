@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Amazing Design'
-copyright = '2024, IHP Open PDK'
-author = 'Amazing Design Authors'
+project = 'FMD_QNC_mmW_detector'
+copyright = '2024, iHP Open PDK'
+author = 'oliver munz'
 
 release = '0.1'
 version = '0.1.0'

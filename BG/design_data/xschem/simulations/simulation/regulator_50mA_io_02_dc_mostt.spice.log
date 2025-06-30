@@ -1,0 +1,121 @@
+
+*****
+***** Welcome to the Xyce(TM) Parallel Electronic Simulator
+*****
+***** This is version Xyce DEVELOPMENT-202409220015-(Public_Release-7.8.0-128-g5b74b0d5)-opensource
+***** Date: Fri Dec 13 17:17:44 CET 2024
+
+
+***** Executing netlist /ALL/Xschem/TO_Nov2024-main/BG/design_data/xschem/simulations/simulation/regulator_50mA_io_02_dc_mostt.spice
+
+***** Reading and parsing netlist...
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 212
+ No model parameter MUNQSO found for model SG13G2_HV_PMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 212
+ No model parameter SWNQS found for model SG13G2_HV_PMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 62
+ No model parameter MUNQSO found for model SG13G2_HV_NMOS_PSP of type
+ PSP103_VA, parameter ignored.
+Netlist warning in file
+ /home/ich/share/pdk/ihp-sg13g2/libs.tech/xyce/models/sg13g2_moshv_parm.lib at
+ or near line 62
+ No model parameter SWNQS found for model SG13G2_HV_NMOS_PSP of type
+ PSP103_VA, parameter ignored.
+***** Setting up topology...
+
+Netlist warning: Voltage Node (VSS) does not have a DC path to ground
+Netlist warning: Voltage Node (NET17) does not have a DC path to ground
+Netlist warning: Voltage Node (NET18) does not have a DC path to ground
+***** Device Count Summary ...
+       C level 1 (Capacitor)                    6
+       D level 1,2 (Diode)                     84
+       I level 1 (Independent Current Source)   1
+       PSP103_VA level 1 (ADMS PSP103_VA)     734
+       R level 1 (Resistor)                   138
+       V level 1 (Independent Voltage Source)  32
+       ------------------------------------------
+       Total Devices                          995
+***** Setting up matrix structure...
+***** Number of Unknowns = 2279
+***** Initializing...
+
+
+***** Solution Summary *****
+	Number Successful Steps Taken:		415
+	Number Failed Steps Attempted:		29
+	Number Jacobians Evaluated:		381242
+	Number Linear Solves:			381242
+	Number Failed Linear Solves:		0
+	Number Residual Evaluations:		389963
+	Number Nonlinear Convergence Failures:	29
+	Total Residual Load Time:		3172.13 seconds
+	Total Jacobian Load Time:		316.153 seconds
+	Total Linear Solution Time:		369.646 seconds
+
+	Failed DC sweep steps:		
+		DC Step # 25
+		DC Step # 33
+		DC Step # 35
+		DC Step # 25
+		DC Step # 33
+		DC Step # 25
+		DC Step # 34
+		DC Step # 26
+		DC Step # 27
+		DC Step # 34
+		DC Step # 25
+		DC Step # 34
+		DC Step # 25
+		DC Step # 34
+		DC Step # 26
+		DC Step # 27
+		DC Step # 34
+		DC Step # 26
+		DC Step # 27
+		DC Step # 34
+		DC Step # 25
+		DC Step # 34
+		DC Step # 25
+		DC Step # 34
+		DC Step # 26
+		DC Step # 34
+		DC Step # 26
+		DC Step # 27
+		DC Step # 34
+
+***** Total Simulation Solvers Run Time: 4034.43 seconds
+***** Total Elapsed Run Time:            4036.51 seconds
+*****
+***** End of Xyce(TM) Simulation
+*****
+
+Timing summary of 1 processor
+                 Stats                   Count        CPU Time              Wall Time
+---------------------------------------- ------ --------------------- ---------------------
+Xyce                                          1  1:06:59.215 (100.0%)  1:07:16.512 (100.0%)
+  Analysis                                    1  1:06:57.223 (99.95%)  1:07:14.426 (99.95%)
+    Step                                      1  1:06:57.223 (99.95%)  1:07:14.426 (99.95%)
+      DC Sweep                               12  1:06:57.202 (99.95%)  1:07:14.405 (99.95%)
+        Solve                               444  1:06:56.767 (99.94%)  1:07:13.958 (99.94%)
+          Residual                       389963    52:42.933 (78.70%)    52:54.457 (78.64%)
+          Jacobian                       381242     5:15.559 ( 7.85%)     5:17.853 ( 7.87%)
+          Linear Solve                   381242     6:07.878 ( 9.15%)     6:10.995 ( 9.19%)
+        Successful Step                     415        0.221 (<0.01%)        0.228 (<0.01%)
+        Failed Steps                         29        0.000 (<0.01%)        0.000 (<0.01%)
+  Netlist Import                              1        1.804 ( 0.04%)        1.868 ( 0.05%)
+    Parse Context                             1        0.017 (<0.01%)        0.019 (<0.01%)
+    Distribute Devices                        1        1.744 ( 0.04%)        1.800 ( 0.04%)
+    Verify Devices                            1        0.000 (<0.01%)        0.000 (<0.01%)
+    Instantiate                               1        0.042 (<0.01%)        0.048 (<0.01%)
+  Late Initialization                         1        0.185 (<0.01%)        0.214 (<0.01%)
+    Global Indices                            1        0.009 (<0.01%)        0.010 (<0.01%)
+  Setup Matrix Structure                      1        0.012 (<0.01%)        0.014 (<0.01%)
+
