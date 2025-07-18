@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 T {VSEL_OL = 0 --> Closed loop
-VSEL_OL = 1 --> Open loop} -620 -10 0 0 0.5 0.5 {}
+VSEL_OL = 1 --> Open loop} 110 230 0 0 0.5 0.5 {}
 N 200 0 230 -0 {
 lab=PD_OUT}
 N 20 -100 20 -70 {
@@ -85,16 +85,14 @@ N 800 100 800 220 {
 lab=NOC_N}
 N 770 100 800 100 {
 lab=NOC_N}
-N 300 -80 300 -60 {
-lab=VSEL_DT}
-C {devices/iopin.sym} -680 -260 2 0 {name=p4 lab=VCC}
-C {devices/iopin.sym} -680 -220 2 0 {name=p5 lab=VSS}
+C {devices/iopin.sym} -520 -260 2 0 {name=p4 lab=VCC}
+C {devices/iopin.sym} -520 -220 2 0 {name=p5 lab=VSS}
 C {devices/lab_pin.sym} 20 -100 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 350 -90 0 0 {name=p2 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 20 90 0 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 350 80 0 0 {name=p3 sig_type=std_logic lab=VSS}
-C {devices/iopin.sym} -680 -180 2 0 {name=p7 lab=VINS}
-C {devices/iopin.sym} -680 -100 2 0 {name=p8 lab=VINR}
+C {devices/iopin.sym} -520 -180 2 0 {name=p7 lab=VINS}
+C {devices/iopin.sym} -520 -100 2 0 {name=p8 lab=VINR}
 C {devices/lab_pin.sym} -160 20 0 0 {name=p20 sig_type=std_logic lab=VINR}
 C {devices/lab_pin.sym} -160 -20 0 0 {name=p6 sig_type=std_logic lab=VINS}
 C {devices/iopin.sym} 810 -100 0 0 {name=p9 lab=NOC_P}
@@ -102,6 +100,7 @@ C {devices/iopin.sym} 810 100 0 0 {name=p10 lab=NOC_N
 }
 C {devices/lab_pin.sym} 180 -120 0 0 {name=p14 sig_type=std_logic lab=PD_OUT}
 C {../PD/PD_vto1p1.sym} 20 0 0 0 {name=x3}
+C {../NOL/NOL_vto1p1.sym} 350 0 0 0 {name=x4}
 C {../BUFFLV/BUFFLV_vto1p1.sym} -380 -110 0 0 {name=X1}
 C {../BUFFLV/BUFFLV_vto1p1.sym} -380 210 0 0 {name=X2}
 C {../BUFFLV/BUFFLV_vto1p1.sym} 250 -210 0 0 {name=X5}
@@ -124,15 +123,12 @@ C {devices/lab_pin.sym} 300 -330 0 0 {name=p28 sig_type=std_logic lab=VCC}
 C {devices/lab_pin.sym} 300 -170 0 0 {name=p29 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -410 -150 0 0 {name=p30 sig_type=std_logic lab=VINS}
 C {devices/lab_pin.sym} -410 170 0 0 {name=p11 sig_type=std_logic lab=VINR}
-C {devices/iopin.sym} -680 40 2 0 {name=p31 lab=VINS_OL}
-C {devices/iopin.sym} -680 70 2 0 {name=p32 lab=VINR_OL}
-C {devices/iopin.sym} -680 100 2 0 {name=p33 lab=VSEL_OL}
+C {devices/iopin.sym} 710 -280 2 0 {name=p31 lab=VPWMP_OL}
+C {devices/iopin.sym} 710 -250 2 0 {name=p32 lab=VPWMN_OL}
+C {devices/iopin.sym} 710 -220 2 0 {name=p33 lab=VSEL_OL}
 C {sg13g2_stdcells/sg13g2_mux2_2.sym} 730 -100 0 0 {name=x8 VDD=VCC VSS=VSS prefix=sg13g2_ }
 C {sg13g2_stdcells/sg13g2_mux2_2.sym} 730 100 0 0 {name=x9 VDD=VCC VSS=VSS prefix=sg13g2_ }
-C {devices/lab_pin.sym} 690 -80 0 0 {name=p34 sig_type=std_logic lab=VINS_OL}
-C {devices/lab_pin.sym} 690 120 0 0 {name=p35 sig_type=std_logic lab=VINR_OL}
+C {devices/lab_pin.sym} 690 -80 0 0 {name=p34 sig_type=std_logic lab=VPWMP_OL}
+C {devices/lab_pin.sym} 690 120 0 0 {name=p35 sig_type=std_logic lab=VPWMN_OL}
 C {devices/lab_pin.sym} 690 -40 0 0 {name=p36 sig_type=std_logic lab=VSEL_OL}
 C {devices/lab_pin.sym} 690 160 0 0 {name=p37 sig_type=std_logic lab=VSEL_OL}
-C {../NOL/NOL2DT_vto1p1.sym} 350 0 0 0 {name=x10}
-C {devices/iopin.sym} -680 130 2 0 {name=p38 lab=VSEL_DT}
-C {devices/lab_pin.sym} 300 -80 0 0 {name=p39 sig_type=std_logic lab=VSEL_DT}

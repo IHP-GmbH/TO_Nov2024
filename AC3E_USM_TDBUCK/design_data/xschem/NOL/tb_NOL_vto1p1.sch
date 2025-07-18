@@ -9,7 +9,7 @@ N 520 -240 660 -240 {
 lab=VCP}
 N 520 -120 660 -120 {
 lab=VCN}
-C {devices/code_shown.sym} 20 370 0 0 {name=CODE only_toplevel=false value="
+C {devices/code_shown.sym} -300 20 0 0 {name=CODE only_toplevel=false value="
 .save v(vin) v(vcp) v(vcn)
 .control
 tran 100p 300n
@@ -56,16 +56,17 @@ device="ceramic capacitor"}
 C {devices/lab_pin.sym} 660 -60 0 0 {name=p10 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 300 -180 2 0 {name=p11 sig_type=std_logic lab=VCP}
 C {devices/lab_pin.sym} 300 -140 2 0 {name=p12 sig_type=std_logic lab=VCN}
-C {NOL_vto1p1.sym} 180 -160 0 0 {name=x1}
-C {devices/code_shown.sym} 10 50 0 0 {name=MODEL1 only_toplevel=true
+C {../NOL/NOL_vto1p1.sym} 180 -160 0 0 {name=x1}
+C {devices/code_shown.sym} 210 30 0 0 {name=MODEL1 only_toplevel=true
 format="tcleval( @value )"
 value="
 
 .param corner=0
 
 .if (corner==0)
-.lib $::SG13G2_MODELS/cornerMOSlv.lib mos_tt
-.lib $::SG13G2_MODELS/cornerMOSlv.lib mos_tt
+.option temp = -39
+.lib $::SG13G2_MODELS/cornerMOSlv.lib mos_ff
+.lib $::SG13G2_MODELS/cornerMOShv.lib mos_ff
 .lib $::SG13G2_MODELS/cornerRES.lib res_typ
 .lib $::SG13G2_MODELS/cornerCAP.lib cap_typ
 .endif

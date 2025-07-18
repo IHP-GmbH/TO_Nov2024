@@ -94,5 +94,5 @@ C {devices/lab_pin.sym} 800 -360 0 0 {name=p11 sig_type=std_logic lab=B1}
 C {devices/lab_pin.sym} 420 -560 0 0 {name=p12 sig_type=std_logic lab=C1}
 C {devices/lab_pin.sym} 420 -340 0 0 {name=p13 sig_type=std_logic lab=C2}
 C {devices/lab_pin.sym} 280 -570 0 0 {name=p14 sig_type=std_logic lab=A1}
-C {../large_delay/large_delay_vto1p1.sym} 560 -520 0 0 {name=x11}
+C {../large_delay/large_delay_vto1p1.sym} 560 -520 0 0 {name=x10}
 C {../large_delay/large_delay_vto1p1.sym} 560 -380 0 0 {name=x4}
