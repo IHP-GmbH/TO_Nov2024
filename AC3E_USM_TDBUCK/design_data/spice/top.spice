@@ -1,0 +1,472 @@
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/top/top.sch
+.subckt top 28 22 23 24 26 27 25 1 21 2 20 3 19 18 4 5 17 6 16 15 7 8 9 10 11 12 13 14
+*.PININFO 1:B 2:B 3:B 4:B 5:B 6:B 7:B 8:B 9:B 10:B 11:B 12:B 13:B 14:B 15:B 16:B 17:B 18:B 19:B 20:B 21:B 22:B 23:B 24:B 25:B 26:B
+*+ 27:B 28:B
+X8 NOC_P GD_P 19 23 25 20 GD_vto1p1
+X1 GD_P GD_N 28 26 27 DCDCBuck_vto1p1
+X2 NOC_N GD_N 19 23 25 20 GD_vto1p1
+x3 19 25 net1 NOC_N NOC_P net2 16 net5 14 18 17 10 11 12 13 DB
+X4 net3 net1 19 25 LSHL_vto1p1
+X5 net4 net2 19 25 LSHL_vto1p1
+X6 GD_P 22 23 20 BUFFHV_vto1p1
+X7 GD_N 21 23 20 BUFFHV_vto1p1
+x11 3 5 1 net3 2 5 VCO
+x12 4 6 9 net4 2 6 VCO
+X9 net3 7 1 5 BUFFHV_vto1p1
+X10 net4 8 9 6 BUFFHV_vto1p1
+**** begin user architecture code
+
+
+D1 24 1 25 diodevdd_2kv m=1
+D2 24 2 25 diodevdd_2kv m=1
+D3 24 3 25 diodevdd_2kv m=1
+D4 24 4 25 diodevdd_2kv m=1
+D5 24 5 25 diodevdd_2kv m=1
+D6 24 6 25 diodevdd_2kv m=1
+D7 24 7 25 diodevdd_2kv m=1
+D8 24 8 25 diodevdd_2kv m=1
+D9 24 9 25 diodevdd_2kv m=1
+D10 24 10 25 diodevdd_2kv m=1
+D11 24 11 25 diodevdd_2kv m=1
+D12 24 12 25 diodevdd_2kv m=1
+D13 24 13 25 diodevdd_2kv m=1
+D14 24 14 25 diodevdd_2kv m=1
+D15 24 25 25 diodevdd_2kv m=1
+D16 24 16 25 diodevdd_2kv m=1
+D17 24 17 25 diodevdd_2kv m=1
+D18 24 18 25 diodevdd_2kv m=1
+D19 24 19 25 diodevdd_2kv m=1
+D20 24 20 25 diodevdd_2kv m=1
+D21 24 21 25 diodevdd_2kv m=1
+D22 24 22 25 diodevdd_2kv m=1
+D23 24 23 25 diodevdd_2kv m=1
+D24 24 24 25 diodevdd_2kv m=1
+D25 24 25 25 diodevdd_2kv m=1
+D26 24 26 25 diodevdd_2kv m=1
+D27 24 27 25 diodevdd_2kv m=1
+D28 24 28 25 diodevdd_2kv m=1
+
+D29 24 1 25 diodevss_2kv m=1
+D30 24 2 25 diodevss_2kv m=1
+D31 24 3 25 diodevss_2kv m=1
+D32 24 4 25 diodevss_2kv m=1
+D33 24 5 25 diodevss_2kv m=1
+D34 24 6 25 diodevss_2kv m=1
+D35 24 7 25 diodevss_2kv m=1
+D36 24 8 25 diodevss_2kv m=1
+D37 24 9 25 diodevss_2kv m=1
+D38 24 10 25 diodevss_2kv m=1
+D39 24 11 25 diodevss_2kv m=1
+D40 24 12 25 diodevss_2kv m=1
+D41 24 13 25 diodevss_2kv m=1
+D42 24 14 25 diodevss_2kv m=1
+D43 24 25 25 diodevss_2kv m=1
+D44 24 16 25 diodevss_2kv m=1
+D45 24 17 25 diodevss_2kv m=1
+D46 24 18 25 diodevss_2kv m=1
+D47 24 19 25 diodevss_2kv m=1
+D48 24 20 25 diodevss_2kv m=1
+D49 24 21 25 diodevss_2kv m=1
+D50 24 22 25 diodevss_2kv m=1
+D51 24 23 25 diodevss_2kv m=1
+D52 24 24 25 diodevss_2kv m=1
+D53 24 25 25 diodevss_2kv m=1
+D54 24 26 25 diodevss_2kv m=1
+D55 24 27 25 diodevss_2kv m=1
+D56 24 28 25 diodevss_2kv m=1
+
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  ../GD/GD_vto1p1.sym # of pins=6
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/GD/GD_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/GD/GD_vto1p1.sch
+.subckt GD_vto1p1 Vs Vg Vdd VH GND IGND
+*.PININFO VH:B Vdd:B Vs:I Vg:O GND:B IGND:B
+MD9 VgMD2 Vs Vdd Vdd sg13_lv_pmos l=0.13u w=1.12u ng=1 m=2
+MD10 VgMD2 Vs GND GND sg13_lv_nmos l=0.13u w=1.12u ng=1 m=2
+MD1 VgMD5 VgMD1 VH VH sg13_hv_pmos l=0.4u w=10u ng=1 m=1
+MD3 VgMD1 VgMD5 VH VH sg13_hv_pmos l=0.4u w=10u ng=1 m=1
+MD5 VgMD78 VgMD5 VH VH sg13_hv_pmos l=0.4u w=10u ng=1 m=30
+MD7 Vg VgMD78 VH VH sg13_hv_pmos l=0.4u w=10u ng=1 m=250
+MD2 VgMD5 VgMD2 IGND IGND sg13_hv_nmos l=0.45u w=10u ng=1 m=6
+MD4 VgMD1 Vs IGND IGND sg13_hv_nmos l=0.45u w=10u ng=1 m=6
+MD6 VgMD78 Vs IGND IGND sg13_hv_nmos l=0.45u w=10u ng=1 m=25
+MD8 Vg VgMD78 IGND IGND sg13_hv_nmos l=0.45u w=10u ng=1 m=200
+**** begin user architecture code
+
+
+MD1D  VgMD5   VH   VH   VH   sg13_hv_pmos L=0.4u W=10u M=1
+MD3D  VgMD1   VH   VH   VH   sg13_hv_pmos L=0.4u W=10u M=1
+MD5D  VgMD78  VH   VH   VH   sg13_hv_pmos L=0.4u W=10u M=2
+MDPD  VH      VH   VH   VH   sg13_hv_pmos L=0.4u W=10u M=14
+MD2D  VgMD5   IGND  IGND  IGND  sg13_hv_nmos L=0.45u W=10u M=2
+MD4D  VgMD1   IGND  IGND  IGND  sg13_hv_nmos L=0.45u W=10u M=2
+MD6D  VgMD78  IGND  IGND  IGND  sg13_hv_nmos L=0.45u W=10u M=1
+MDND  IGND     IGND  IGND  IGND  sg13_hv_nmos L=0.45u W=10u M=58
+
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  ../DCDCBuck/DCDCBuck_vto1p1.sym # of pins=5
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/DCDCBuck/DCDCBuck_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/DCDCBuck/DCDCBuck_vto1p1.sch
+.subckt DCDCBuck_vto1p1 VgM1 VgM2 Vin GND Vo
+*.PININFO Vin:B VgM1:I VgM2:I Vo:B GND:B
+M2 Vo VgM2 GND GND sg13_hv_nmos l=0.45u w=10u ng=1 m=4080
+M1 Vo VgM1 Vin Vin sg13_hv_pmos l=0.4u w=10u ng=1 m=12096
+.ends
+
+
+* expanding   symbol:  ../Digital_Block/DB.sym # of pins=15
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/Digital_Block/DB.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/Digital_Block/DB.sch
+.subckt DB VCC VSS VINS NOC_N NOC_P VINR PD_BUFF VINS_BUFF VINR_BUFF NOC_P_BUFF NOC_N_BUFF VINS_OL VINR_OL VSEL_OL VSEL_DT
+*.PININFO VCC:B VSS:B VINS:B VINR:B NOC_P:B NOC_N:B VINS_BUFF:B VINR_BUFF:B PD_BUFF:B NOC_P_BUFF:B NOC_N_BUFF:B VINS_OL:B
+*+ VINR_OL:B VSEL_OL:B VSEL_DT:B
+x3 VCC VSS VINS PD_OUT VINR PD_vto1p1
+X1 VINS VINS_BUFF VCC VSS BUFFLV_vto1p1
+X2 VINR VINR_BUFF VCC VSS BUFFLV_vto1p1
+X5 PD_OUT PD_BUFF VCC VSS BUFFLV_vto1p1
+X6 NOC_P NOC_P_BUFF VCC VSS BUFFLV_vto1p1
+X7 NOC_N NOC_N_BUFF VCC VSS BUFFLV_vto1p1
+x8 net1 VINS_OL VSEL_OL VCC VSS NOC_P sg13g2_mux2_2
+x9 net2 VINR_OL VSEL_OL VCC VSS NOC_N sg13g2_mux2_2
+x10 VCC VSS net1 PD_OUT net2 VSEL_DT NOL2DT_vto1p1
+.ends
+
+
+* expanding   symbol:  ../LSHL/LSHL_vto1p1.sym # of pins=4
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/LSHL/LSHL_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/LSHL/LSHL_vto1p1.sch
+.subckt LSHL_vto1p1 Vs Vg VDIG VSS
+*.PININFO VDIG:B Vs:I Vg:O VSS:B
+MD5 VgMD2 Vs VDIG VDIG sg13_hv_pmos l=0.4u w=1u ng=1 m=2
+MD6 VgMD2 Vs VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=1
+x7 net1 VDIG VSS Vg sg13g2_buf_4
+x1 VgMD2 VDIG VSS net1 sg13g2_inv_1
+.ends
+
+
+* expanding   symbol:  ../BUFFHV/BUFFHV_vto1p1.sym # of pins=4
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/BUFFHV/BUFFHV_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/BUFFHV/BUFFHV_vto1p1.sch
+.subckt BUFFHV_vto1p1 Vs Vg VDIG VSS
+*.PININFO VDIG:B Vs:I Vg:O VSS:B
+MD5 VgM1M2 Vs VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=2
+MD6 VgM1M2 Vs VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=1
+MD1 net1 VgM1M2 VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=4
+MD2 net1 VgM1M2 VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=2
+MD3 net2 net1 VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=8
+MD4 net2 net1 VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=4
+MD7 net3 net2 VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=16
+MD8 net3 net2 VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=8
+MD9 net4 net3 VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=32
+MD10 net4 net3 VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=16
+MD11 Vg net4 VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=64
+MD12 Vg net4 VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=32
+M1 VSS VSS VgM1M2 VSS sg13_hv_nmos l=0.45u w=1.0u ng=1 m=1
+M2 VSS VSS VSS VSS sg13_hv_nmos l=0.45u w=1.0u ng=1 m=78
+M3 VDIG VDIG VDIG VDIG sg13_hv_pmos l=0.45u w=1.0u ng=1 m=16
+.ends
+
+
+* expanding   symbol:  /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/VCO.sym # of
+*+ pins=6
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/VCO.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/VCO.sch
+.subckt VCO VCONT IVSS2 VDD V_1 VSEL IVSS1
+*.PININFO VCONT:I VDD:B IVSS1:B V_1:O VSEL:I IVSS2:B
+x1 VDD VCONT V_1_int V_5 IVSS1 VSEL VCO_stage
+x2 VDD IVSS1 V_2 V_1_int IVSS1 VSEL VCO_stage
+x3 VDD IVSS1 V_3 V_2 IVSS1 VSEL VCO_stage
+x4 VDD IVSS1 V_4 V_3 IVSS1 VSEL VCO_stage
+x5 VDD VCONT V_5 V_4 IVSS1 VSEL VCO_stage
+x7 VDD VDD VD1 IVSS1 IVSS1 VDD VCO_stage
+x8 VDD VDD VD2 IVSS1 IVSS1 VDD VCO_stage
+X6 V_1_int V_1 VDD IVSS2 BUFFHVVCO
+.ends
+
+
+* expanding   symbol:  ../PD/PD_vto1p1.sym # of pins=5
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/PD/PD_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/PD/PD_vto1p1.sch
+.subckt PD_vto1p1 VCC VSS VINS V_PWM VINR
+*.PININFO V_PWM:B VCC:B VSS:B VINS:B VINR:B
+x3 net2 V_PWM VCC VSS V_N sg13g2_nor2_1
+x1 V_N net1 VCC VSS V_PWM sg13g2_nor2_1
+x5 VCC VSS VFE1 VINR net2 SPG_vto1p1
+x2 VCC VSS VFE1 VINS net1 SPG_vto1p1
+C2 VFE1 VSS 100f m=1
+C1 VFE1 VSS 100f m=1
+.ends
+
+
+* expanding   symbol:  ../BUFFLV/BUFFLV_vto1p1.sym # of pins=4
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/BUFFLV/BUFFLV_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/BUFFLV/BUFFLV_vto1p1.sch
+.subckt BUFFLV_vto1p1 Vs Vg VDIG VSS
+*.PININFO VDIG:B Vs:I Vg:O VSS:B
+x7 net1 VDIG VSS net2 sg13g2_buf_4
+x2 Vs VDIG VSS net1 sg13g2_buf_1
+x1 net2 VDIG VSS net3 sg13g2_buf_16
+x3[0] net3 VDIG VSS Vg sg13g2_buf_16
+x3[1] net3 VDIG VSS Vg sg13g2_buf_16
+x3[2] net3 VDIG VSS Vg sg13g2_buf_16
+x3[3] net3 VDIG VSS Vg sg13g2_buf_16
+.ends
+
+
+* expanding   symbol:  ../NOL/NOL2DT_vto1p1.sym # of pins=6
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/NOL/NOL2DT_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/NOL/NOL2DT_vto1p1.sch
+.subckt NOL2DT_vto1p1 VCC VSS VCP CLK VCN VSEL_NOL
+*.PININFO CLK:B VCP:B VCN:B VCC:B VSS:B VSEL_NOL:B
+x5 CLK VCC VSS A1 sg13g2_inv_1
+x3 A1 B1 VCC VSS C1 sg13g2_nor2_1
+x1 B2 CLK VCC VSS C2 sg13g2_nor2_1
+x2 B1 VCC VSS net1 sg13g2_inv_1
+x6 B2 VCC VSS net2 sg13g2_inv_2
+x7 net1 VCC VSS net3 sg13g2_inv_2
+x8 net2 VCC VSS VCN sg13g2_inv_4
+x9 net3 VCC VSS VCP sg13g2_inv_4
+x10 VCC VSS C1 net9 large_delay_vto1p1
+x4 VCC VSS C2 net7 large_delay_vto1p1
+x11 net9 net8 VSEL_NOL VCC VSS B2 sg13g2_mux2_2
+x12 VCC VSS net4 net8 large_delay_vto1p1
+x13 VCC VSS C1 net4 large_delay_vto1p1
+x14 net7 net6 VSEL_NOL VCC VSS B1 sg13g2_mux2_2
+x15 VCC VSS net5 net6 large_delay_vto1p1
+x16 VCC VSS C2 net5 large_delay_vto1p1
+.ends
+
+
+* expanding   symbol:  /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/VCO_stage.sym #
+*+ of pins=6
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/VCO_stage.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/VCO_stage.sch
+.subckt VCO_stage VDD VCONT VOUT VIN VSS VSEL
+*.PININFO VIN:I VOUT:O VDD:B VSS:B VCONT:I VSEL:I
+M9 D789 D789 VSS VSS sg13_hv_nmos l=0.5u w=5u ng=1 m=1
+M3 D34 D789 VSS VSS sg13_hv_nmos l=0.5u w=5u ng=1 m=1
+M5 D5 D789 VSS VSS sg13_hv_nmos l=0.5u w=3u ng=1 m=1
+M8 D789 VCONT VDD VDD sg13_hv_pmos l=7u w=0.4u ng=1 m=1
+M4 D34 D34 VDD VDD sg13_hv_pmos l=4u w=8u ng=1 m=1
+M6 D6 D34 VDD VDD sg13_hv_pmos l=4u w=5u ng=1 m=1
+M2 VOUT VIN D6 VDD sg13_hv_pmos l=5u w=5u ng=1 m=1
+M1 VOUT VIN D5 VSS sg13_hv_nmos l=5u w=2u ng=1 m=1
+M7 D789 VSEL VDD VDD sg13_hv_pmos l=7u w=0.4u ng=1 m=9
+M1D1 D5 VSS VSS VSS sg13_hv_nmos l=5u w=2u ng=1 m=1
+M2D1 D6 VDD VDD VDD sg13_hv_pmos l=5u w=5u ng=1 m=1
+M3D D34 VSS VSS VSS sg13_hv_nmos l=0.5u w=1u ng=1 m=1
+M6D D6 VDD VDD VDD sg13_hv_pmos l=4u w=1u ng=1 m=1
+M46D VDD VDD VDD VDD sg13_hv_pmos l=4u w=1u ng=1 m=7
+M7D D789 VDD VDD VDD sg13_hv_pmos l=7u w=0.4u ng=1 m=1
+M2D2 VOUT VDD VDD VDD sg13_hv_pmos l=5u w=5u ng=1 m=1
+M8D D789 VDD VDD VDD sg13_hv_pmos l=7u w=0.4u ng=1 m=1
+M78D VDD VDD VDD VDD sg13_hv_pmos l=7u w=0.4u ng=1 m=12
+M1D2 VOUT VSS VSS VSS sg13_hv_nmos l=5u w=2u ng=1 m=1
+M5D D5 VSS VSS VSS sg13_hv_nmos l=0.5u w=1u ng=1 m=1
+M9D D789 VSS VSS VSS sg13_hv_nmos l=0.5u w=1u ng=1 m=1
+M359D VSS VSS VSS VSS sg13_hv_nmos l=0.5u w=1u ng=1 m=5
+.ends
+
+
+* expanding   symbol:  /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/BUFFHVVCO.sym #
+*+ of pins=4
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/BUFFHVVCO.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TORepo_IHPNov2024_TDBuck/design_data/xschem/VCO/BUFFHVVCO.sch
+.subckt BUFFHVVCO Vs Vg VDIG VSS
+*.PININFO VDIG:B Vs:I Vg:O VSS:B
+MD5 VgM1M2 Vs VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=2
+MD6 VgM1M2 Vs VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=1
+MD1 Vg VgM1M2 VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=4
+MD2 Vg VgM1M2 VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=2
+MD6D VgM1M2 VSS VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=1
+MND VSS VSS VSS VSS sg13_hv_nmos l=0.45u w=1u ng=1 m=10
+MPD VDIG VDIG VDIG VDIG sg13_hv_pmos l=0.45u w=1u ng=1 m=8
+.ends
+
+
+* expanding   symbol:  ../SPG/SPG_vto1p1.sym # of pins=5
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/SPG/SPG_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/SPG/SPG_vto1p1.sch
+.subckt SPG_vto1p1 VCC VSS VFE VIN VRE
+*.PININFO VIN:B VFE:B VRE:B VCC:B VSS:B
+x1 dly7 VCC VSS dly8 sg13g2_inv_1
+x2 predly VCC VSS net2 sg13g2_inv_1
+x3 net3 VCC VSS predly sg13g2_inv_1
+x4 dly8 VCC VSS net1 sg13g2_inv_1
+x5 VIN VCC VSS net3 sg13g2_inv_2
+x6 predly VCC VSS V_gatein sg13g2_inv_8
+x7 net2 dly8 VCC VSS VFE sg13g2_and2_2
+x8 net1 predly VCC VSS VRE sg13g2_and2_2
+x10 VCC VSS V_gatein dly7 large_delay_vto1p1
+.ends
+
+
+* expanding   symbol:  ../large_delay/large_delay_vto1p1.sym # of pins=4
+** sym_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/large_delay/large_delay_vto1p1.sym
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/TO_Nov2024_AC3E_USM_TDBUCK/AC3E_USM_TDBUCK/design_data/xschem/large_delay/large_delay_vto1p1.sch
+.subckt large_delay_vto1p1 VCC VSS VIN VOUT
+*.PININFO VIN:B VOUT:B VCC:B VSS:B
+x1[0] VIN VCC VSS n2 sg13g2_dlygate4sd3_1
+x1[1] n2 VCC VSS n3 sg13g2_dlygate4sd3_1
+x1[2] n3 VCC VSS n4 sg13g2_dlygate4sd3_1
+x1[3] n4 VCC VSS n5 sg13g2_dlygate4sd3_1
+x1[4] n5 VCC VSS VOUT sg13g2_dlygate4sd3_1
+.ends
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_nor2_1
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_nor2_1 A B VDD VSS Y
+M0 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M3 Y B VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M1 net1 A VDD VDD sg13_lv_pmos w=1.12e-06 l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M2 Y B net1 VDD sg13_lv_pmos w=1.12e-06 l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_1
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_inv_1 A VDD VSS Y
+M1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M0 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_2
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_inv_2 A VDD VSS Y
+M1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=2
+M0 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=2
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_8
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_inv_8 A VDD VSS Y
+M1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=8
+M0 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=8
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_and2_2
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_and2_2 A B VDD VSS X
+M0 net4 A net2 VSS sg13_lv_nmos w=640.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M2 X net4 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=2
+M3 net2 B VSS VSS sg13_lv_nmos w=640.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M1 net4 B VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+M4 VDD net4 X VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=2
+M5 net4 A VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_dlygate4sd3_1
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_dlygate4sd3_1 A VDD VSS X
+MP3 X net3 VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP2 net3 net2 VDD VDD sg13_lv_pmos w=1.000u l=500.0n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP1 net2 net1 VDD VDD sg13_lv_pmos w=1.000u l=500.0n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP0 net1 A VDD VDD sg13_lv_pmos w=420.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN3 X net3 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN2 net3 net2 VSS VSS sg13_lv_nmos w=420.00n l=500.0n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN1 net2 net1 VSS VSS sg13_lv_nmos w=420.00n l=500.0n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN0 net1 A VSS VSS sg13_lv_nmos w=420.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_inv_4
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_inv_4 A VDD VSS Y
+MP0 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=4
+MN0 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=4
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_mux2_2
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_mux2_2 A0 A1 S VDD VSS X
+MP0 net4 S VDD VDD sg13_lv_pmos w=1.000u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP4 X net6 VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=2
+MP3 net6 A1 net5 VDD sg13_lv_pmos w=1.000u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP5 Sb S VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP2 net5 Sb VDD VDD sg13_lv_pmos w=1.000u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MP1 net6 A0 net4 VDD sg13_lv_pmos w=1.000u l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN4 net3 S VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN1 net1 Sb VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN6 X net6 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=2
+MN5 Sb S VSS VSS sg13_lv_nmos w=550.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN2 net6 A1 net3 VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+MN0 net6 A0 net1 VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=0 as=0 pd=0 ps=0 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_buf_16
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_buf_16 A VDD VSS X
+MN1 net1 A VSS VSS sg13_lv_nmos w=4.44u l=130.00n ng=6 ad=8.436e-13 as=1.066e-12 pd=6.72e-06 ps=8.8e-06 m=1
+MN0 X net1 VSS VSS sg13_lv_nmos w=11.84u l=130.00n ng=16 ad=0 as=0 pd=0 ps=0 m=1
+MP1 X net1 VDD VDD sg13_lv_pmos w=17.92u l=130.00n ng=16 ad=3.405e-12 as=3.741e-12 pd=2.4e-05 ps=2.684e-05 m=1
+MP0 net1 A VDD VDD sg13_lv_pmos w=6.72u l=130.00n ng=6 ad=1.277e-12 as=1.613e-12 pd=9e-06 ps=1.184e-05 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_buf_4
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_buf_4 A VDD VSS X
+MN1 net1 A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=2.516e-13 as=2.516e-13 pd=2.16e-06 ps=2.16e-06 m=1
+MN0 X net1 VSS VSS sg13_lv_nmos w=2.96u l=130.00n ng=4 ad=5.624e-13 as=7.844e-13 pd=4.48e-06 ps=6.56e-06 m=1
+MP1 X net1 VDD VDD sg13_lv_pmos w=4.48u l=130.00n ng=4 ad=8.512e-13 as=1.187e-12 pd=6e-06 ps=8.84e-06 m=1
+MP0 net1 A VDD VDD sg13_lv_pmos w=1.68u l=130.00n ng=2 ad=3.192e-13 as=5.712e-13 pd=2.44e-06 ps=4.72e-06 m=1
+.ends
+* End of subcircuit definition.
+
+* Library name: sg13g2_stdcell
+* Cell name: sg13g2_buf_1
+* View name: schematic
+* Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+* pspice dspf
+.subckt sg13g2_buf_1 A VDD VSS X
+MN1 net1 A VSS VSS sg13_lv_nmos w=550.00n l=130.00n ng=1 ad=1.87e-13 as=1.87e-13 pd=1.78e-06 ps=1.78e-06 m=1
+MN0 X net1 VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 ad=2.516e-13 as=2.516e-13 pd=2.16e-06 ps=2.16e-06 m=1
+MP1 X net1 VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 ad=3.808e-13 as=3.808e-13 pd=2.92e-06 ps=2.92e-06 m=1
+MP0 net1 A VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1 ad=2.856e-13 as=2.856e-13 pd=2.36e-06 ps=2.36e-06 m=1
+.ends
+* End of subcircuit definition.
+
+.end

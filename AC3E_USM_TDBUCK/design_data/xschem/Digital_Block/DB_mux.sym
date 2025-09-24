@@ -26,7 +26,6 @@ L 7 -120 60 -120 80 {}
 L 7 -150 20 -130 20 {}
 L 7 -150 40 -130 40 {}
 L 7 -150 0 -130 0 {}
-L 7 20 60 20 80 {}
 B 5 -32.5 -82.5 -27.5 -77.5 {name=VCC dir=inout}
 B 5 -32.5 77.5 -27.5 82.5 {name=VSS dir=inout}
 B 5 -152.5 -42.5 -147.5 -37.5 {name=VINS dir=inout}
@@ -43,11 +42,9 @@ B 5 147.5 -42.5 152.5 -37.5 {name=NOC_P_BUFF
 dir=inout}
 B 5 147.5 37.5 152.5 42.5 {name=NOC_N_BUFF
 dir=inout}
-B 5 -152.5 17.5 -147.5 22.5 {name=VINS_OL dir=inout}
-B 5 -152.5 37.5 -147.5 42.5 {name=VINR_OL dir=inout}
+B 5 -152.5 17.5 -147.5 22.5 {name=VPWMP_OL dir=inout}
+B 5 -152.5 37.5 -147.5 42.5 {name=VPWMN_OL dir=inout}
 B 5 -152.5 -2.5 -147.5 2.5 {name=VSEL_OL dir=inout}
-B 5 17.5 77.5 22.5 82.5 {name=VSEL_DT
-dir=inout}
 T {@symname} -27 -6 0 0 0.3 0.3 {}
 T {@name} 95 -72 0 0 0.2 0.2 {}
 T {VCC} -15 -54 0 1 0.2 0.2 {}
@@ -61,7 +58,6 @@ T {NOC_P_BUFF} 125 -44 0 1 0.2 0.2 {}
 T {NOC_N_BUFF} 125 36 0 1 0.2 0.2 {}
 T {VINS_BUFF} -65 -54 0 1 0.2 0.2 {}
 T {VINR_BUFF} -65 46 0 1 0.2 0.2 {}
-T {VINS_OL} -75 16 0 1 0.2 0.2 {}
-T {VINR_OL} -75 36 0 1 0.2 0.2 {}
+T {VPWMP_OL} -65 16 0 1 0.2 0.2 {}
+T {VPWMN_OL} -65 36 0 1 0.2 0.2 {}
 T {VSEL_OL} -75 -4 0 1 0.2 0.2 {}
-T {VSEL_DT} 45 46 0 1 0.2 0.2 {}
