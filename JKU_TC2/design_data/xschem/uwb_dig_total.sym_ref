@@ -1,0 +1,56 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -30 130 -30 {}
+L 4 -130 100 130 100 {}
+L 4 -130 -30 -130 100 {}
+L 4 130 -30 130 100 {}
+L 7 -150 -10 -130 -10 {}
+L 7 -10 -50 -10 -30 {}
+L 7 10 -50 10 -30 {}
+L 7 130 -10 150 -10 {}
+L 7 -150 50 -130 50 {}
+L 7 130 10 150 10 {}
+L 7 -150 90 -130 90 {}
+L 7 -150 30 -130 30 {}
+L 7 -150 70 -130 70 {}
+L 7 130 70 150 70 {}
+L 7 130 90 150 90 {}
+L 7 130 50 150 50 {}
+L 7 130 30 150 30 {}
+B 5 -12.5 -52.5 -7.5 -47.5 {name=VDD dir=inout}
+B 5 7.5 -52.5 12.5 -47.5 {name=VSS dir=inout}
+B 5 -152.5 87.5 -147.5 92.5 {name=clk dir=inout}
+B 5 -152.5 67.5 -147.5 72.5 {name=load dir=inout}
+B 5 -152.5 27.5 -147.5 32.5 {name=serial_in dir=inout}
+B 5 147.5 27.5 152.5 32.5 {name=serial_out dir=inout}
+B 5 -152.5 47.5 -147.5 52.5 {name=shift_enable dir=inout}
+B 5 147.5 -12.5 152.5 -7.5 {name=trg_ext1 dir=inout}
+B 5 147.5 7.5 152.5 12.5 {name=trg_ext2 dir=inout}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=trg_in dir=inout}
+B 5 147.5 47.5 152.5 52.5 {name=osc_trg1[0:3] dir=inout}
+B 5 147.5 67.5 152.5 72.5 {name=osc_trg2[0:3] dir=inout}
+B 5 147.5 87.5 152.5 92.5 {name=pa_trg[0:3] dir=inout}
+T {@symname} -55 4 0 0 0.3 0.3 {}
+T {@name} 95 -42 0 0 0.2 0.2 {}
+T {VDD} -14 -25 3 1 0.2 0.2 {}
+T {VSS} 6 -25 3 1 0.2 0.2 {}
+T {clk} -125 94 2 1 0.2 0.2 {}
+T {load} -125 74 2 1 0.2 0.2 {}
+T {serial_in} -125 34 2 1 0.2 0.2 {}
+T {serial_out} 125 26 0 1 0.2 0.2 {}
+T {shift_enable} -125 54 2 1 0.2 0.2 {}
+T {trg_ext1} 125 -14 0 1 0.2 0.2 {}
+T {trg_ext2} 125 6 0 1 0.2 0.2 {}
+T {trg_in} -125 -14 0 0 0.2 0.2 {}
+T {osc_trg1[0:3]} 125 46 0 1 0.2 0.2 {}
+T {osc_trg2[0:3]} 125 66 0 1 0.2 0.2 {}
+T {pa_trg[0:3]} 125 86 0 1 0.2 0.2 {}
+

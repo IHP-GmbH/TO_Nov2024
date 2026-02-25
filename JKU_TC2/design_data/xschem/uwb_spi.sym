@@ -1,0 +1,37 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -30 130 -30 {}
+L 4 -130 70 130 70 {}
+L 4 -130 -30 -130 70 {}
+L 4 130 -30 130 70 {}
+L 7 -10 -50 -10 -30 {}
+L 7 10 -50 10 -30 {}
+L 7 -150 50 -130 50 {}
+L 7 -150 -10 -130 -10 {}
+L 7 130 10 150 10 {}
+L 7 130 -10 150 -10 {}
+L 7 -150 20 -130 20 {}
+B 5 -12.5 -52.5 -7.5 -47.5 {name=VDD dir=inout}
+B 5 7.5 -52.5 12.5 -47.5 {name=VSS dir=inout}
+B 5 -152.5 47.5 -147.5 52.5 {name=clk dir=inout}
+B 5 -152.5 17.5 -147.5 22.5 {name=load dir=inout}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=serial_in dir=inout}
+B 5 147.5 -12.5 152.5 -7.5 {name=serial_out dir=inout}
+B 5 147.5 7.5 152.5 12.5 {name=data_reg[0:39] dir=inout}
+T {@symname} -55 4 0 0 0.3 0.3 {}
+T {@name} 95 -42 0 0 0.2 0.2 {}
+T {VDD} -14 -25 3 1 0.2 0.2 {}
+T {VSS} 6 -25 3 1 0.2 0.2 {}
+T {clk} -125 54 2 1 0.2 0.2 {}
+T {load} -125 24 2 1 0.2 0.2 {}
+T {serial_in} -125 -6 2 1 0.2 0.2 {}
+T {serial_out} 125 -14 0 1 0.2 0.2 {}
+T {data_reg[0:39]} 125 6 0 1 0.2 0.2 {}
