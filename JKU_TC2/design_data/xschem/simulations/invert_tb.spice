@@ -1,0 +1,75 @@
+** sch_path: /foss/designs/ihpdig/invert/invert_tb.sch
+**.subckt invert_tb
+V3 net6 GND pulse 0 1.2 1n 0.1n 0.1n 5n 10n
+V6 net1 GND 1.2
+x1 vdd1v2 GND trigger trg_delayed trg_out1 trg_out2 bw[0] bw[1] bw[2] bw[3] bw[4] trg[0] trg[1] invert
+R1 trigger net6 20 m=1
+C1 trigger GND 100f m=1
+R2 vdd1v2 net1 5 m=1
+C3 vdd1v2 GND 10p m=1
+V1 bw[0] GND 0
+V2 bw[1] GND 1.2
+V4 bw[2] GND 1.2
+V5 bw[3] GND 0
+V7 bw[4] GND 0
+C2 trg_delayed GND 80f m=1
+V8 trg[1] GND 1.2
+V9 trg[0] GND 0
+x2 vn net4 vp uwb_inductor
+XM1 net2 net3 vtp GND sg13_lv_nmos w=15u l=0.15u ng=4 m=18
+XM2 net3 net2 vtn GND sg13_lv_nmos w=15u l=0.15u ng=4 m=18
+XM3 vtp GND GND GND sg13_lv_nmos w=15u l=0.15u ng=4 m=8
+R3 vn net3 0 m=1
+R4 vp net2 0 m=1
+XM4 vtn GND GND GND sg13_lv_nmos w=15u l=0.15u ng=4 m=8
+XC6 vtn vtp cap_cmim w=6.0e-6 l=6.0e-6 m=2
+XC7 vtp vtn cap_cmim w=6.0e-6 l=6.0e-6 m=2
+XC8 vn vp cap_cmim w=4.0e-6 l=4.0e-6 m=8
+XC9 vp vn cap_cmim w=4.0e-6 l=4.0e-6 m=8
+V11 net5 GND 0.9
+R5 net4 net5 5 m=1
+C4 net4 GND 10p m=1
+R6 trg_out1 GND 3k m=1
+R7 trg_out2 GND 3k m=1
+**** begin user architecture code
+
+
+.param temp=27
+.control
+.options savecurrents
+save all
+op
+write invert_tb.raw
+set appendwrite
+tran 10p 5n
+remzerovec
+plot vp-vn
+write invert_tb.raw
+.endc
+
+
+
+.include /foss/designs/ihpdig/invert/invert.spice
+
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  uwb_inductor.sym # of pins=3
+** sym_path: /foss/designs/ihpdig/invert/uwb_inductor.sym
+** sch_path: /foss/designs/ihpdig/invert/uwb_inductor.sch
+.subckt uwb_inductor p1 pm p2
+*.iopin p1
+*.iopin pm
+*.iopin p2
+L3 pm net1 252.5p m=1
+R1 net1 p1 1.603 m=1
+L2 pm net2 252.5p m=1
+R2 net2 p2 1.603 m=1
+.ends
+
+.GLOBAL GND
+.end

@@ -1,0 +1,56 @@
+** sch_path: /foss/designs/ihpdig/uwb_dig/uwb_dig_tb.sch
+**.subckt uwb_dig_tb
+V6 vdd1v2 GND 1.2
+V25 net1 GND 0 pulse(0 1.2 25n 1n 1n 50n 100n)
+
+V26 net2 GND pwl 0 0 200n 0 +203n 0 +300n 0 +303n 1.2 400n 1.2 +403n 0 +500n 0 +503n 1.2 600n 1.2 +603n 1.2 +700n 1.2 +703n 1.2
++ 800n 1.2 +803n 1.2 +900n 1.2 +903n 0 1000n 0 +1003n 0 +1100n 0 +1103n 0 1200n 0 +1203n 1.2 +1300n 1.2 +1303n 0 1400n 0 +1403n 1.2
++ +1500n 1.2 +1503n 0 1600n 0 +1603n 0 +1700n 0 +1703n 1.2 1800n 1.2 +1803n 1.2 +1900n 1.2 +1903n 0 2000n 0
+V1 net3 GND 0 pulse(0 1.2 2350n 1n 1n 100n 5000n)
+
+C1 _sclk GND 10p m=1
+R2 net2 _sdi 1k m=1
+C2 _sdi GND 10p m=1
+R1 net1 _sclk 1k m=1
+R3 net3 trigger 1k m=1
+C3 trigger GND 1p m=1
+V2 net4 GND 0 pulse(0 1.2 2000n 1n 1n 100n 5000n)
+
+R4 net4 _sload 1k m=1
+C4 _sload GND 1p m=1
+x1 vdd1v2 GND trgext1 trgext2 trigger _reg[35] _reg[36] _reg[37] _reg[38] _reg[39] _reg[26] _reg[27] _reg[28] _reg[29] _osctrg1[0]
++ _osctrg1[1] _osctrg1[2] _osctrg1[3] _osctrg2[0] _osctrg2[1] _osctrg2[2] _osctrg2[3] _reg[22] _reg[23] _reg[24] _reg[25] _patrg[0] _patrg[1]
++ _patrg[2] _patrg[3] _reg[33] _reg[34] _reg[30] _reg[31] _reg[32] uwb_dig
+x2 vdd1v2 GND _sclk _sload _sdi _sdo _reg[0] _reg[1] _reg[2] _reg[3] _reg[4] _reg[5] _reg[6] _reg[7] _reg[8] _reg[9] _reg[10]
++ _reg[11] _reg[12] _reg[13] _reg[14] _reg[15] _reg[16] _reg[17] _reg[18] _reg[19] _reg[20] _reg[21] _reg[22] _reg[23] _reg[24] _reg[25]
++ _reg[26] _reg[27] _reg[28] _reg[29] _reg[30] _reg[31] _reg[32] _reg[33] _reg[34] _reg[35] _reg[36] _reg[37] _reg[38] _reg[39] uwb_spi
+**** begin user architecture code
+
+.param temp=27
+.control
+.OPTION RELTOL=1e-5
+.OPTION METHOD=gear
+
+op
+save all
+write uwb_dig_tb.raw
+set appendwrite
+tran 5n 2500n
+remzerovec
+write uwb_dig_tb.raw
+.endc
+
+
+
+.include /foss/designs/ihpdig/uwb_dig/uwb_spi.spice
+.include /foss/designs/ihpdig/uwb_dig/uwb_dig.spice
+
+
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,711 @@
+*SPICE netlist created from verilog structural netlist module invert by vlog2Spice (qflow)
+*This file may contain array delimiters, not for use in simulation.
+
+.include /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+.subckt invert VDD VSS trg_in trg_in_delayed trg_out1 trg_out2 bw_ctrl<0>
++ bw_ctrl<1> bw_ctrl<2> bw_ctrl<3> bw_ctrl<4> osc_gain<0> osc_gain<1> osc_gain<2> osc_gain<3>
++ osc_trg1<0> osc_trg1<1> osc_trg1<2> osc_trg1<3> osc_trg2<0> osc_trg2<1> osc_trg2<2> osc_trg2<3>
++ pa_gain<0> pa_gain<1> pa_gain<2> pa_gain<3> pa_trg<0> pa_trg<1> pa_trg<2> pa_trg<3>
++ trg_ctrl<0> trg_ctrl<1> 
+
+Xbwctrl_inst.inv0_1  clknet_1_0__leaf_trg_in VDD VSS net34 sg13g2_inv_16
+X_2_ net30 VDD VSS trg_in_delayed sg13g2_buf_1
+Xbwctrl_inst.inverter_gen1.xinv_3  net35 VDD VSS net36 sg13g2_inv_8
+Xbwctrl_inst.inverter_gen101.xinv_133  net165 VDD VSS net166 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen102.xinv_134  net166 VDD VSS net167 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen103.xinv_135  net167 VDD VSS net168 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen104.xinv_136  net168 VDD VSS net169 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen105.xinv_137  net169 VDD VSS net170 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen106.xinv_138  net170 VDD VSS net171 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen107.xinv_139  net171 VDD VSS net172 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen108.xinv_140  net172 VDD VSS net173 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen109.xinv_141  net173 VDD VSS net174 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen110.xinv_142  net174 VDD VSS net175 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen11.xinv_17  net49 VDD VSS net50 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen111.xinv_143  net175 VDD VSS net176 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen112.xinv_144  net176 VDD VSS net177 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen113.xinv_145  net177 VDD VSS net178 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen114.xinv_146  net178 VDD VSS net179 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen115.xinv_147  net179 VDD VSS net180 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen116.xinv_148  net180 VDD VSS net181 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen117.xinv_149  net181 VDD VSS net182 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen118.xinv_150  net182 VDD VSS net183 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen119.xinv_151  net183 VDD VSS net184 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen120.xinv_152  net184 VDD VSS net185 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen12.xinv_18  clknet_1_1__leaf_net50 VDD VSS net51 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen121.xinv_153  net185 VDD VSS net186 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen122.xinv_154  net186 VDD VSS net187 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen123.xinv_155  net187 VDD VSS net188 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen124.xinv_156  net188 VDD VSS net189 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen125.xinv_157  net189 VDD VSS net190 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen126.xinv_158  net190 VDD VSS net191 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen127.xinv_159  net191 VDD VSS net192 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen128.xinv_160  net192 VDD VSS net193 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen129.xinv_161  net193 VDD VSS net194 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen130.xinv_162  net194 VDD VSS net195 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen13.xinv_20  net52 VDD VSS net53 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen131.xinv_163  net195 VDD VSS net196 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen132.xinv_164  net196 VDD VSS net197 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen133.xinv_165  net197 VDD VSS net198 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen134.xinv_166  net198 VDD VSS net199 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen135.xinv_167  net199 VDD VSS net200 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen136.xinv_168  net200 VDD VSS net201 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen137.xinv_169  net201 VDD VSS net202 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen138.xinv_170  net202 VDD VSS net203 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen139.xinv_171  net203 VDD VSS net204 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen140.xinv_172  net204 VDD VSS net205 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen14.xinv_21  clknet_1_1__leaf_net53 VDD VSS net54 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen141.xinv_173  net205 VDD VSS net206 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen142.xinv_174  net206 VDD VSS net207 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen143.xinv_175  net207 VDD VSS net208 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen144.xinv_176  net208 VDD VSS net209 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen145.xinv_177  net209 VDD VSS net210 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen146.xinv_178  net210 VDD VSS net211 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen147.xinv_179  net211 VDD VSS net212 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen148.xinv_180  net212 VDD VSS net213 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen149.xinv_181  net213 VDD VSS net214 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen150.xinv_182  net214 VDD VSS net215 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen15.xinv_23  net55 VDD VSS net56 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen151.xinv_183  net215 VDD VSS net216 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen152.xinv_184  net216 VDD VSS net217 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen153.xinv_185  net217 VDD VSS net218 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen154.xinv_186  net218 VDD VSS net219 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen155.xinv_187  net219 VDD VSS net220 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen156.xinv_188  net220 VDD VSS net221 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen157.xinv_189  net221 VDD VSS net222 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen158.xinv_190  net222 VDD VSS net223 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen159.xinv_191  net223 VDD VSS net224 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen160.xinv_192  net224 VDD VSS net225 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen16.xinv_24  clknet_1_1__leaf_net56 VDD VSS net57 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen161.xinv_193  net225 VDD VSS net226 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen162.xinv_194  net226 VDD VSS net227 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen163.xinv_195  net227 VDD VSS net228 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen164.xinv_196  net228 VDD VSS net229 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen165.xinv_197  net229 VDD VSS net230 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen166.xinv_198  net230 VDD VSS net231 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen167.xinv_199  net231 VDD VSS net232 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen168.xinv_200  net232 VDD VSS net233 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen169.xinv_201  net233 VDD VSS net234 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen170.xinv_202  net234 VDD VSS net235 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen17.xinv_26  net58 VDD VSS net59 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen171.xinv_203  net235 VDD VSS net236 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen172.xinv_204  net236 VDD VSS net237 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen173.xinv_205  net237 VDD VSS net238 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen174.xinv_206  net238 VDD VSS net239 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen175.xinv_207  net239 VDD VSS net240 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen176.xinv_208  net240 VDD VSS net241 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen177.xinv_209  net241 VDD VSS net242 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen178.xinv_210  net242 VDD VSS net243 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen179.xinv_211  net243 VDD VSS net244 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen180.xinv_212  net244 VDD VSS net245 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen18.xinv_27  clknet_1_1__leaf_net59 VDD VSS net60 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen181.xinv_213  net245 VDD VSS net246 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen182.xinv_214  net246 VDD VSS net247 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen183.xinv_215  net247 VDD VSS net248 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen184.xinv_216  net248 VDD VSS net249 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen185.xinv_217  net249 VDD VSS net250 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen186.xinv_218  net250 VDD VSS net251 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen187.xinv_219  net251 VDD VSS net252 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen188.xinv_220  net252 VDD VSS net253 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen189.xinv_221  net253 VDD VSS net254 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen190.xinv_222  net254 VDD VSS net255 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen19.xinv_29  net61 VDD VSS net62 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen191.xinv_223  net255 VDD VSS net256 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen192.xinv_224  net256 VDD VSS net257 sg13g2_inv_2
+Xfs_inst.inv2_225  clknet_1_0__leaf_bwctrl_inst.trg_out1_2mux VDD VSS net258 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen20.xinv_30  clknet_1_1__leaf_net62 VDD VSS net63 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen2.xinv_4  clknet_1_1__leaf_net36 VDD VSS net37 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen21.xinv_32  net64 VDD VSS net65 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen22.xinv_33  clknet_1_1__leaf_net65 VDD VSS net66 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen23.xinv_35  net67 VDD VSS net68 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen24.xinv_36  clknet_1_0__leaf_net68 VDD VSS net69 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen25.xinv_38  net70 VDD VSS net71 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen26.xinv_39  clknet_1_1__leaf_net71 VDD VSS net72 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen27.xinv_41  net73 VDD VSS net74 sg13g2_inv_8
+Xbwctrl_inst.inverter_gen28.xinv_42  clknet_1_1__leaf_net74 VDD VSS net75 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen29.xinv_44  net76 VDD VSS net77 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen30.xinv_45  clknet_1_0__leaf_net77 VDD VSS net78 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen3.xinv_6  net38 VDD VSS net39 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen31.xinv_47  net79 VDD VSS net80 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen32.xinv_48  clknet_1_1__leaf_net80 VDD VSS net81 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen33.xinv_50  net82 VDD VSS net83 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen34.xinv_51  clknet_1_1__leaf_net83 VDD VSS net84 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen35.xinv_53  net85 VDD VSS net86 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen36.xinv_54  clknet_1_1__leaf_net86 VDD VSS net87 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen37.xinv_56  net88 VDD VSS net89 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen38.xinv_57  clknet_1_0__leaf_net89 VDD VSS net90 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen39.xinv_59  net91 VDD VSS net92 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen40.xinv_60  clknet_1_0__leaf_net92 VDD VSS net93 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen4.xinv_7  clknet_1_1__leaf_net39 VDD VSS net40 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen41.xinv_62  net94 VDD VSS net95 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen42.xinv_63  clknet_1_1__leaf_net95 VDD VSS net96 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen43.xinv_65  net97 VDD VSS net98 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen44.xinv_66  clknet_1_0__leaf_net98 VDD VSS net99 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen45.xinv_68  net100 VDD VSS net101 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen46.xinv_69  clknet_1_0__leaf_net101 VDD VSS net102 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen47.xinv_71  net103 VDD VSS net104 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen48.xinv_72  clknet_1_0__leaf_net104 VDD VSS net105 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen49.xinv_74  net106 VDD VSS net107 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen50.xinv_75  clknet_1_0__leaf_net107 VDD VSS net108 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen5.xinv_9  net41 VDD VSS net42 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen51.xinv_77  net109 VDD VSS net110 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen52.xinv_78  clknet_1_0__leaf_net110 VDD VSS net111 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen53.xinv_80  net112 VDD VSS net113 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen54.xinv_81  net113 VDD VSS net114 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen55.xinv_82  net114 VDD VSS net115 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen56.xinv_83  clknet_1_0__leaf_net115 VDD VSS net116 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen57.xinv_85  net117 VDD VSS net118 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen58.xinv_86  clknet_1_1__leaf_net118 VDD VSS net119 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen59.xinv_88  net120 VDD VSS net121 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen60.xinv_89  clknet_1_1__leaf_net121 VDD VSS net122 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen6.xinv_10  net42 VDD VSS net43 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen61.xinv_91  net123 VDD VSS net124 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen62.xinv_92  clknet_1_0__leaf_net124 VDD VSS net125 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen63.xinv_94  net126 VDD VSS net127 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen64.xinv_95  clknet_1_0__leaf_net127 VDD VSS net128 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen65.xinv_97  net129 VDD VSS net130 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen66.xinv_98  net130 VDD VSS net131 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen67.xinv_99  net131 VDD VSS net132 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen68.xinv_100  net132 VDD VSS net133 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen69.xinv_101  net133 VDD VSS net134 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen70.xinv_102  net134 VDD VSS net135 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen7.xinv_11  net43 VDD VSS net44 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen71.xinv_103  net135 VDD VSS net136 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen72.xinv_104  net136 VDD VSS net137 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen73.xinv_105  net137 VDD VSS net138 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen74.xinv_106  net138 VDD VSS net139 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen75.xinv_107  net139 VDD VSS net140 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen76.xinv_108  net140 VDD VSS net141 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen77.xinv_109  net141 VDD VSS net142 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen78.xinv_110  net142 VDD VSS net143 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen79.xinv_111  net143 VDD VSS net144 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen80.xinv_112  net144 VDD VSS net145 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen8.xinv_12  clknet_1_1__leaf_net44 VDD VSS net45 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen81.xinv_113  net145 VDD VSS net146 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen82.xinv_114  net146 VDD VSS net147 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen83.xinv_115  net147 VDD VSS net148 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen84.xinv_116  net148 VDD VSS net149 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen85.xinv_117  net149 VDD VSS net150 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen86.xinv_118  net150 VDD VSS net151 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen87.xinv_119  net151 VDD VSS net152 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen88.xinv_120  net152 VDD VSS net153 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen89.xinv_121  net153 VDD VSS net154 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen90.xinv_122  net154 VDD VSS net155 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen9.xinv_14  net46 VDD VSS net47 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen91.xinv_123  net155 VDD VSS net156 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen92.xinv_124  net156 VDD VSS net157 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen93.xinv_125  net157 VDD VSS net158 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen94.xinv_126  net158 VDD VSS net159 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen95.xinv_127  net159 VDD VSS net160 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen96.xinv_128  net160 VDD VSS net161 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen97.xinv_129  net161 VDD VSS net162 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen98.xinv_130  net162 VDD VSS net163 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen99.xinv_131  net163 VDD VSS net164 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen100.xinv_132  net164 VDD VSS net165 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen10.xinv_15  clknet_1_1__leaf_net47 VDD VSS net48 sg13g2_inv_2
+Xbwctrl_inst.uut1.mux0  net34 net37 net40 net45 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y0 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux1  net48 net51 net54 net57 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y1 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux10  bwctrl_inst.uut1.z0 bwctrl_inst.uut1.z1 net31 net32 net5 net33 
++ VDD
++ VSS bwctrl_inst.trg_dly sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux2  net60 net63 net66 net69 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y2 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux3  net72 net75 net78 net81 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y3 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux4  net84 net87 net90 net93 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y4 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux5  net96 net99 net102 net105 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y5 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux6  net108 net111 net116 net119 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y6 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux7  net122 net125 net128 net257 net1 net2 
++ VDD
++ VSS bwctrl_inst.uut1.y7 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux8  bwctrl_inst.uut1.y0 bwctrl_inst.uut1.y1 bwctrl_inst.uut1.y2 bwctrl_inst.uut1.y3 net3 net4 
++ VDD
++ VSS bwctrl_inst.uut1.z0 sg13g2_mux4_1
+Xbwctrl_inst.uut1.mux9  bwctrl_inst.uut1.y4 bwctrl_inst.uut1.y5 bwctrl_inst.uut1.y6 bwctrl_inst.uut1.y7 net3 net4 
++ VDD
++ VSS bwctrl_inst.uut1.z1 sg13g2_mux4_1
+Xbwctrl_inst.xand  bwctrl_inst.trg_dly clknet_1_0__leaf_trg_in VDD VSS bwctrl_inst.trg_out1_2mux sg13g2_and2_2
+Xfs_inst.inverter_gen21.xinv2_226  clknet_1_1__leaf_net258 VDD VSS net259 sg13g2_inv_2
+Xfs_inst.inverter_gen22.xinv2_228  net260 VDD VSS net261 sg13g2_inv_4
+Xfs_inst.inverter_gen23.xinv2_229  clknet_1_0__leaf_net261 VDD VSS net262 sg13g2_inv_2
+Xfs_inst.inverter_gen24.xinv2_231  net263 VDD VSS net264 sg13g2_inv_2
+Xfs_inst.inverter_gen25.xinv2_232  net264 VDD VSS net265 sg13g2_inv_2
+Xclkbuf_0_trg_in trg_in VDD VSS clknet_0_trg_in sg13g2_buf_16
+Xfs_inst.uut2  clknet_level_2_1_12_bwctrl_inst.trg_out1_2mux net259 net262 net265 net14 net15 
++ VDD
++ VSS fs_inst.trg_out2_2buf sg13g2_mux4_1
+Xfs_inst.uut3  clknet_level_2_1_12_bwctrl_inst.trg_out1_2mux clknet_level_2_1_25_bwctrl_inst.trg_out1_2mux clknet_level_2_1_25_bwctrl_inst.trg_out1_2mux clknet_level_2_1_25_bwctrl_inst.trg_out1_2mux net14 net15 
++ VDD
++ VSS fs_inst.trg_out1_2buf sg13g2_mux4_1
+Xgc_osc1.xand0  net267 net6 VDD VSS gc_osc1.trg_gc<0> sg13g2_and2_2
+Xgc_osc1.xand1  net267 net7 VDD VSS gc_osc1.trg_gc<1> sg13g2_and2_2
+Xgc_osc1.xand2  net267 net8 VDD VSS gc_osc1.trg_gc<2> sg13g2_and2_2
+Xgc_osc1.xand3  net267 net9 VDD VSS gc_osc1.trg_gc<3> sg13g2_and2_2
+Xgc_osc1.xbuff0  gc_osc1.trg_gc<0> VDD VSS net16 sg13g2_buf_16
+Xgc_osc1.xbuff1  gc_osc1.trg_gc<1> VDD VSS net17 sg13g2_buf_16
+Xgc_osc1.xbuff2  gc_osc1.trg_gc<2> VDD VSS net18 sg13g2_buf_16
+Xgc_osc1.xbuff3  gc_osc1.trg_gc<3> VDD VSS net19 sg13g2_buf_16
+Xgc_osc2.xand0  fs_inst.trg_out2_2buf net6 VDD VSS gc_osc2.trg_gc<0> sg13g2_and2_2
+Xgc_osc2.xand1  fs_inst.trg_out2_2buf net7 VDD VSS gc_osc2.trg_gc<1> sg13g2_and2_2
+Xgc_osc2.xand2  fs_inst.trg_out2_2buf net8 VDD VSS gc_osc2.trg_gc<2> sg13g2_and2_2
+Xgc_osc2.xand3  fs_inst.trg_out2_2buf net9 VDD VSS gc_osc2.trg_gc<3> sg13g2_and2_2
+Xgc_osc2.xbuff0  gc_osc2.trg_gc<0> VDD VSS net20 sg13g2_buf_16
+Xgc_osc2.xbuff1  gc_osc2.trg_gc<1> VDD VSS net21 sg13g2_buf_16
+Xgc_osc2.xbuff2  gc_osc2.trg_gc<2> VDD VSS net22 sg13g2_buf_16
+Xgc_osc2.xbuff3  gc_osc2.trg_gc<3> VDD VSS net23 sg13g2_buf_16
+Xgc_pa.xand0  net267 net10 VDD VSS gc_pa.trg_gc<0> sg13g2_and2_2
+Xgc_pa.xand1  net267 net11 VDD VSS gc_pa.trg_gc<1> sg13g2_and2_2
+Xgc_pa.xand2  net267 net12 VDD VSS gc_pa.trg_gc<2> sg13g2_and2_2
+Xgc_pa.xand3  net267 net13 VDD VSS gc_pa.trg_gc<3> sg13g2_and2_2
+Xgc_pa.xbuff0  gc_pa.trg_gc<0> VDD VSS net24 sg13g2_buf_16
+Xgc_pa.xbuff1  gc_pa.trg_gc<1> VDD VSS net25 sg13g2_buf_16
+Xgc_pa.xbuff2  gc_pa.trg_gc<2> VDD VSS net26 sg13g2_buf_16
+Xgc_pa.xbuff3  gc_pa.trg_gc<3> VDD VSS net27 sg13g2_buf_16
+Xxbuf1 net267 VDD VSS net28 sg13g2_buf_16
+Xxbuf3 fs_inst.trg_out2_2buf VDD VSS net29 sg13g2_buf_16
+Xinput1 bw_ctrl<0> VDD VSS net1 sg13g2_buf_4
+Xinput2 bw_ctrl<1> VDD VSS net2 sg13g2_buf_4
+Xinput3 bw_ctrl<2> VDD VSS net3 sg13g2_buf_1
+Xinput4 bw_ctrl<3> VDD VSS net4 sg13g2_buf_1
+Xinput5 bw_ctrl<4> VDD VSS net5 sg13g2_buf_1
+Xinput6 osc_gain<0> VDD VSS net6 sg13g2_buf_1
+Xinput7 osc_gain<1> VDD VSS net7 sg13g2_buf_1
+Xinput8 osc_gain<2> VDD VSS net8 sg13g2_buf_1
+Xinput9 osc_gain<3> VDD VSS net9 sg13g2_buf_1
+Xinput10 pa_gain<0> VDD VSS net10 sg13g2_buf_1
+Xinput11 pa_gain<1> VDD VSS net11 sg13g2_buf_1
+Xinput12 pa_gain<2> VDD VSS net12 sg13g2_buf_1
+Xinput13 pa_gain<3> VDD VSS net13 sg13g2_buf_1
+Xinput14 trg_ctrl<0> VDD VSS net14 sg13g2_buf_1
+Xinput15 trg_ctrl<1> VDD VSS net15 sg13g2_buf_1
+Xoutput16 net16 VDD VSS osc_trg1<0> sg13g2_buf_1
+Xoutput17 net17 VDD VSS osc_trg1<1> sg13g2_buf_1
+Xoutput18 net18 VDD VSS osc_trg1<2> sg13g2_buf_1
+Xoutput19 net19 VDD VSS osc_trg1<3> sg13g2_buf_1
+Xoutput20 net20 VDD VSS osc_trg2<0> sg13g2_buf_1
+Xoutput21 net21 VDD VSS osc_trg2<1> sg13g2_buf_1
+Xoutput22 net22 VDD VSS osc_trg2<2> sg13g2_buf_1
+Xoutput23 net23 VDD VSS osc_trg2<3> sg13g2_buf_1
+Xoutput24 net24 VDD VSS pa_trg<0> sg13g2_buf_1
+Xoutput25 net25 VDD VSS pa_trg<1> sg13g2_buf_1
+Xoutput26 net26 VDD VSS pa_trg<2> sg13g2_buf_1
+Xoutput27 net27 VDD VSS pa_trg<3> sg13g2_buf_1
+Xoutput28 net28 VDD VSS trg_out1 sg13g2_buf_1
+Xoutput29 net29 VDD VSS trg_out2 sg13g2_buf_1
+X_2__30 net30 VDD VSS sg13g2_tielo
+Xbwctrl_inst.uut1.mux10_31  net31 VDD VSS sg13g2_tielo
+Xbwctrl_inst.uut1.mux10_32  net32 VDD VSS sg13g2_tielo
+Xbwctrl_inst.uut1.mux10_33  net33 VDD VSS sg13g2_tielo
+Xbwctrl_inst.inv0_2  clknet_1_1__leaf_trg_in VDD VSS net35 sg13g2_inv_16
+Xbwctrl_inst.inverter_gen2.xinv_5  clknet_1_0__leaf_net36 VDD VSS net38 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen4.xinv_8  clknet_1_0__leaf_net39 VDD VSS net41 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen8.xinv_13  clknet_1_0__leaf_net44 VDD VSS net46 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen10.xinv_16  clknet_1_0__leaf_net47 VDD VSS net49 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen12.xinv_19  clknet_1_0__leaf_net50 VDD VSS net52 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen14.xinv_22  clknet_1_0__leaf_net53 VDD VSS net55 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen16.xinv_25  clknet_1_0__leaf_net56 VDD VSS net58 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen18.xinv_28  clknet_1_0__leaf_net59 VDD VSS net61 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen20.xinv_31  clknet_1_0__leaf_net62 VDD VSS net64 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen22.xinv_34  clknet_1_0__leaf_net65 VDD VSS net67 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen24.xinv_37  clknet_1_1__leaf_net68 VDD VSS net70 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen26.xinv_40  clknet_1_0__leaf_net71 VDD VSS net73 sg13g2_inv_8
+Xbwctrl_inst.inverter_gen28.xinv_43  clknet_1_0__leaf_net74 VDD VSS net76 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen30.xinv_46  clknet_1_1__leaf_net77 VDD VSS net79 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen32.xinv_49  clknet_1_0__leaf_net80 VDD VSS net82 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen34.xinv_52  clknet_1_0__leaf_net83 VDD VSS net85 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen36.xinv_55  clknet_1_0__leaf_net86 VDD VSS net88 sg13g2_inv_8
+Xbwctrl_inst.inverter_gen38.xinv_58  clknet_1_1__leaf_net89 VDD VSS net91 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen40.xinv_61  clknet_1_1__leaf_net92 VDD VSS net94 sg13g2_inv_8
+Xbwctrl_inst.inverter_gen42.xinv_64  clknet_1_0__leaf_net95 VDD VSS net97 sg13g2_inv_8
+Xbwctrl_inst.inverter_gen44.xinv_67  clknet_1_1__leaf_net98 VDD VSS net100 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen46.xinv_70  clknet_1_1__leaf_net101 VDD VSS net103 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen48.xinv_73  clknet_1_1__leaf_net104 VDD VSS net106 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen50.xinv_76  clknet_1_1__leaf_net107 VDD VSS net109 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen52.xinv_79  clknet_1_1__leaf_net110 VDD VSS net112 sg13g2_inv_4
+Xbwctrl_inst.inverter_gen56.xinv_84  clknet_1_1__leaf_net115 VDD VSS net117 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen58.xinv_87  clknet_1_0__leaf_net118 VDD VSS net120 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen60.xinv_90  clknet_1_0__leaf_net121 VDD VSS net123 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen62.xinv_93  clknet_1_1__leaf_net124 VDD VSS net126 sg13g2_inv_2
+Xbwctrl_inst.inverter_gen64.xinv_96  clknet_1_1__leaf_net127 VDD VSS net129 sg13g2_inv_4
+Xfs_inst.inverter_gen21.xinv2_227  clknet_1_0__leaf_net258 VDD VSS net260 sg13g2_inv_4
+Xfs_inst.inverter_gen23.xinv2_230  clknet_1_1__leaf_net261 VDD VSS net263 sg13g2_inv_4
+Xclkbuf_1_0__f_trg_in clknet_0_trg_in VDD VSS clknet_1_0__leaf_trg_in sg13g2_buf_1
+Xclkbuf_1_1__f_trg_in clknet_0_trg_in VDD VSS clknet_1_1__leaf_trg_in sg13g2_buf_16
+Xclkbuf_0_net36 net36 VDD VSS clknet_0_net36 sg13g2_buf_8
+Xclkbuf_1_0__f_net36 clknet_0_net36 VDD VSS clknet_1_0__leaf_net36 sg13g2_buf_8
+Xclkbuf_1_1__f_net36 clknet_0_net36 VDD VSS clknet_1_1__leaf_net36 sg13g2_buf_1
+Xclkbuf_0_net39 net39 VDD VSS clknet_0_net39 sg13g2_buf_2
+Xclkbuf_1_0__f_net39 clknet_0_net39 VDD VSS clknet_1_0__leaf_net39 sg13g2_buf_2
+Xclkbuf_1_1__f_net39 clknet_0_net39 VDD VSS clknet_1_1__leaf_net39 sg13g2_buf_1
+Xclkbuf_0_net44 net44 VDD VSS clknet_0_net44 sg13g2_buf_8
+Xclkbuf_1_0__f_net44 clknet_0_net44 VDD VSS clknet_1_0__leaf_net44 sg13g2_buf_8
+Xclkbuf_1_1__f_net44 clknet_0_net44 VDD VSS clknet_1_1__leaf_net44 sg13g2_buf_1
+Xclkbuf_0_net47 net47 VDD VSS clknet_0_net47 sg13g2_buf_8
+Xclkbuf_1_0__f_net47 clknet_0_net47 VDD VSS clknet_1_0__leaf_net47 sg13g2_buf_8
+Xclkbuf_1_1__f_net47 clknet_0_net47 VDD VSS clknet_1_1__leaf_net47 sg13g2_buf_1
+Xclkbuf_0_net50 net50 VDD VSS clknet_0_net50 sg13g2_buf_2
+Xclkbuf_1_0__f_net50 clknet_0_net50 VDD VSS clknet_1_0__leaf_net50 sg13g2_buf_2
+Xclkbuf_1_1__f_net50 clknet_0_net50 VDD VSS clknet_1_1__leaf_net50 sg13g2_buf_1
+Xclkbuf_0_net53 net53 VDD VSS clknet_0_net53 sg13g2_buf_2
+Xclkbuf_1_0__f_net53 clknet_0_net53 VDD VSS clknet_1_0__leaf_net53 sg13g2_buf_1
+Xclkbuf_1_1__f_net53 clknet_0_net53 VDD VSS clknet_1_1__leaf_net53 sg13g2_buf_1
+Xclkbuf_0_net56 net56 VDD VSS clknet_0_net56 sg13g2_buf_2
+Xclkbuf_1_0__f_net56 clknet_0_net56 VDD VSS clknet_1_0__leaf_net56 sg13g2_buf_1
+Xclkbuf_1_1__f_net56 clknet_0_net56 VDD VSS clknet_1_1__leaf_net56 sg13g2_buf_1
+Xclkbuf_0_net59 net59 VDD VSS clknet_0_net59 sg13g2_buf_2
+Xclkbuf_1_0__f_net59 clknet_0_net59 VDD VSS clknet_1_0__leaf_net59 sg13g2_buf_1
+Xclkbuf_1_1__f_net59 clknet_0_net59 VDD VSS clknet_1_1__leaf_net59 sg13g2_buf_1
+Xclkbuf_0_net62 net62 VDD VSS clknet_0_net62 sg13g2_buf_2
+Xclkbuf_1_0__f_net62 clknet_0_net62 VDD VSS clknet_1_0__leaf_net62 sg13g2_buf_1
+Xclkbuf_1_1__f_net62 clknet_0_net62 VDD VSS clknet_1_1__leaf_net62 sg13g2_buf_1
+Xclkbuf_0_net65 net65 VDD VSS clknet_0_net65 sg13g2_buf_8
+Xclkbuf_1_0__f_net65 clknet_0_net65 VDD VSS clknet_1_0__leaf_net65 sg13g2_buf_8
+Xclkbuf_1_1__f_net65 clknet_0_net65 VDD VSS clknet_1_1__leaf_net65 sg13g2_buf_1
+Xclkbuf_0_net68 net68 VDD VSS clknet_0_net68 sg13g2_buf_8
+Xclkbuf_1_0__f_net68 clknet_0_net68 VDD VSS clknet_1_0__leaf_net68 sg13g2_buf_1
+Xclkbuf_1_1__f_net68 clknet_0_net68 VDD VSS clknet_1_1__leaf_net68 sg13g2_buf_8
+Xclkbuf_0_net71 net71 VDD VSS clknet_0_net71 sg13g2_buf_8
+Xclkbuf_1_0__f_net71 clknet_0_net71 VDD VSS clknet_1_0__leaf_net71 sg13g2_buf_16
+Xclkbuf_1_1__f_net71 clknet_0_net71 VDD VSS clknet_1_1__leaf_net71 sg13g2_buf_1
+Xclkbuf_0_net74 net74 VDD VSS clknet_0_net74 sg13g2_buf_8
+Xclkbuf_1_0__f_net74 clknet_0_net74 VDD VSS clknet_1_0__leaf_net74 sg13g2_buf_8
+Xclkbuf_1_1__f_net74 clknet_0_net74 VDD VSS clknet_1_1__leaf_net74 sg13g2_buf_1
+Xclkbuf_0_net77 net77 VDD VSS clknet_0_net77 sg13g2_buf_8
+Xclkbuf_1_0__f_net77 clknet_0_net77 VDD VSS clknet_1_0__leaf_net77 sg13g2_buf_1
+Xclkbuf_1_1__f_net77 clknet_0_net77 VDD VSS clknet_1_1__leaf_net77 sg13g2_buf_8
+Xclkbuf_0_net80 net80 VDD VSS clknet_0_net80 sg13g2_buf_8
+Xclkbuf_1_0__f_net80 clknet_0_net80 VDD VSS clknet_1_0__leaf_net80 sg13g2_buf_8
+Xclkbuf_1_1__f_net80 clknet_0_net80 VDD VSS clknet_1_1__leaf_net80 sg13g2_buf_1
+Xclkbuf_0_net83 net83 VDD VSS clknet_0_net83 sg13g2_buf_8
+Xclkbuf_1_0__f_net83 clknet_0_net83 VDD VSS clknet_1_0__leaf_net83 sg13g2_buf_8
+Xclkbuf_1_1__f_net83 clknet_0_net83 VDD VSS clknet_1_1__leaf_net83 sg13g2_buf_1
+Xclkbuf_0_net86 net86 VDD VSS clknet_0_net86 sg13g2_buf_8
+Xclkbuf_1_0__f_net86 clknet_0_net86 VDD VSS clknet_1_0__leaf_net86 sg13g2_buf_16
+Xclkbuf_1_1__f_net86 clknet_0_net86 VDD VSS clknet_1_1__leaf_net86 sg13g2_buf_1
+Xclkbuf_0_net89 net89 VDD VSS clknet_0_net89 sg13g2_buf_8
+Xclkbuf_1_0__f_net89 clknet_0_net89 VDD VSS clknet_1_0__leaf_net89 sg13g2_buf_1
+Xclkbuf_1_1__f_net89 clknet_0_net89 VDD VSS clknet_1_1__leaf_net89 sg13g2_buf_8
+Xclkbuf_0_net92 net92 VDD VSS clknet_0_net92 sg13g2_buf_8
+Xclkbuf_1_0__f_net92 clknet_0_net92 VDD VSS clknet_1_0__leaf_net92 sg13g2_buf_1
+Xclkbuf_1_1__f_net92 clknet_0_net92 VDD VSS clknet_1_1__leaf_net92 sg13g2_buf_16
+Xclkbuf_0_net95 net95 VDD VSS clknet_0_net95 sg13g2_buf_8
+Xclkbuf_1_0__f_net95 clknet_0_net95 VDD VSS clknet_1_0__leaf_net95 sg13g2_buf_8
+Xclkbuf_1_1__f_net95 clknet_0_net95 VDD VSS clknet_1_1__leaf_net95 sg13g2_buf_1
+Xclkbuf_0_net98 net98 VDD VSS clknet_0_net98 sg13g2_buf_8
+Xclkbuf_1_0__f_net98 clknet_0_net98 VDD VSS clknet_1_0__leaf_net98 sg13g2_buf_1
+Xclkbuf_1_1__f_net98 clknet_0_net98 VDD VSS clknet_1_1__leaf_net98 sg13g2_buf_8
+Xclkbuf_0_net101 net101 VDD VSS clknet_0_net101 sg13g2_buf_8
+Xclkbuf_1_0__f_net101 clknet_0_net101 VDD VSS clknet_1_0__leaf_net101 sg13g2_buf_1
+Xclkbuf_1_1__f_net101 clknet_0_net101 VDD VSS clknet_1_1__leaf_net101 sg13g2_buf_8
+Xclkbuf_0_net104 net104 VDD VSS clknet_0_net104 sg13g2_buf_8
+Xclkbuf_1_0__f_net104 clknet_0_net104 VDD VSS clknet_1_0__leaf_net104 sg13g2_buf_1
+Xclkbuf_1_1__f_net104 clknet_0_net104 VDD VSS clknet_1_1__leaf_net104 sg13g2_buf_8
+Xclkbuf_0_net107 net107 VDD VSS clknet_0_net107 sg13g2_buf_8
+Xclkbuf_1_0__f_net107 clknet_0_net107 VDD VSS clknet_1_0__leaf_net107 sg13g2_buf_1
+Xclkbuf_1_1__f_net107 clknet_0_net107 VDD VSS clknet_1_1__leaf_net107 sg13g2_buf_8
+Xclkbuf_0_net110 net110 VDD VSS clknet_0_net110 sg13g2_buf_8
+Xclkbuf_1_0__f_net110 clknet_0_net110 VDD VSS clknet_1_0__leaf_net110 sg13g2_buf_1
+Xclkbuf_1_1__f_net110 clknet_0_net110 VDD VSS clknet_1_1__leaf_net110 sg13g2_buf_8
+Xclkbuf_0_net115 net115 VDD VSS clknet_0_net115 sg13g2_buf_2
+Xclkbuf_1_0__f_net115 clknet_0_net115 VDD VSS clknet_1_0__leaf_net115 sg13g2_buf_1
+Xclkbuf_1_1__f_net115 clknet_0_net115 VDD VSS clknet_1_1__leaf_net115 sg13g2_buf_2
+Xclkbuf_0_net118 net118 VDD VSS clknet_0_net118 sg13g2_buf_2
+Xclkbuf_1_0__f_net118 clknet_0_net118 VDD VSS clknet_1_0__leaf_net118 sg13g2_buf_2
+Xclkbuf_1_1__f_net118 clknet_0_net118 VDD VSS clknet_1_1__leaf_net118 sg13g2_buf_1
+Xclkbuf_0_net121 net121 VDD VSS clknet_0_net121 sg13g2_buf_2
+Xclkbuf_1_0__f_net121 clknet_0_net121 VDD VSS clknet_1_0__leaf_net121 sg13g2_buf_1
+Xclkbuf_1_1__f_net121 clknet_0_net121 VDD VSS clknet_1_1__leaf_net121 sg13g2_buf_1
+Xclkbuf_0_net124 net124 VDD VSS clknet_0_net124 sg13g2_buf_2
+Xclkbuf_1_0__f_net124 clknet_0_net124 VDD VSS clknet_1_0__leaf_net124 sg13g2_buf_1
+Xclkbuf_1_1__f_net124 clknet_0_net124 VDD VSS clknet_1_1__leaf_net124 sg13g2_buf_2
+Xclkbuf_0_net127 net127 VDD VSS clknet_0_net127 sg13g2_buf_8
+Xclkbuf_1_0__f_net127 clknet_0_net127 VDD VSS clknet_1_0__leaf_net127 sg13g2_buf_1
+Xclkbuf_1_1__f_net127 clknet_0_net127 VDD VSS clknet_1_1__leaf_net127 sg13g2_buf_8
+Xclkbuf_0_bwctrl_inst.trg_out1_2mux  bwctrl_inst.trg_out1_2mux VDD VSS clknet_0_bwctrl_inst.trg_out1_2mux sg13g2_buf_8
+Xclkbuf_1_0__f_bwctrl_inst.trg_out1_2mux  clknet_0_bwctrl_inst.trg_out1_2mux VDD VSS clknet_1_0__leaf_bwctrl_inst.trg_out1_2mux sg13g2_buf_8
+Xclkbuf_1_1__f_bwctrl_inst.trg_out1_2mux  net268 VDD VSS clknet_1_1__leaf_bwctrl_inst.trg_out1_2mux sg13g2_buf_1
+Xclkbuf_level_0_1_10_bwctrl_inst.trg_out1_2mux  net269 VDD VSS clknet_level_0_1_10_bwctrl_inst.trg_out1_2mux sg13g2_buf_1
+Xclkbuf_level_1_1_11_bwctrl_inst.trg_out1_2mux  clknet_level_0_1_10_bwctrl_inst.trg_out1_2mux VDD VSS clknet_level_1_1_11_bwctrl_inst.trg_out1_2mux sg13g2_buf_1
+Xclkbuf_level_2_1_12_bwctrl_inst.trg_out1_2mux  clknet_level_1_1_11_bwctrl_inst.trg_out1_2mux VDD VSS clknet_level_2_1_12_bwctrl_inst.trg_out1_2mux sg13g2_buf_1
+Xclkbuf_level_0_1_23_bwctrl_inst.trg_out1_2mux  clknet_1_1__leaf_bwctrl_inst.trg_out1_2mux VDD VSS clknet_level_0_1_23_bwctrl_inst.trg_out1_2mux sg13g2_buf_1
+Xclkbuf_level_1_1_24_bwctrl_inst.trg_out1_2mux  clknet_level_0_1_23_bwctrl_inst.trg_out1_2mux VDD VSS clknet_level_1_1_24_bwctrl_inst.trg_out1_2mux sg13g2_buf_1
+Xclkbuf_level_2_1_25_bwctrl_inst.trg_out1_2mux  clknet_level_1_1_24_bwctrl_inst.trg_out1_2mux VDD VSS clknet_level_2_1_25_bwctrl_inst.trg_out1_2mux sg13g2_buf_2
+Xclkbuf_0_net258 net258 VDD VSS clknet_0_net258 sg13g2_buf_8
+Xclkbuf_1_0__f_net258 clknet_0_net258 VDD VSS clknet_1_0__leaf_net258 sg13g2_buf_8
+Xclkbuf_1_1__f_net258 net266 VDD VSS clknet_1_1__leaf_net258 sg13g2_buf_1
+Xclkbuf_0_net261 net261 VDD VSS clknet_0_net261 sg13g2_buf_8
+Xclkbuf_1_0__f_net261 clknet_0_net261 VDD VSS clknet_1_0__leaf_net261 sg13g2_buf_1
+Xclkbuf_1_1__f_net261 clknet_0_net261 VDD VSS clknet_1_1__leaf_net261 sg13g2_buf_8
+Xrebuffer233 clknet_0_net258 VDD VSS net266 sg13g2_dlygate4sd1_1
+Xrebuffer234 fs_inst.trg_out1_2buf VDD VSS net267 sg13g2_buf_8
+Xrebuffer1 clknet_0_bwctrl_inst.trg_out1_2mux VDD VSS net268 sg13g2_dlygate4sd1_1
+Xrebuffer2 clknet_1_0__leaf_bwctrl_inst.trg_out1_2mux VDD VSS net269 sg13g2_dlygate4sd1_1
+XFILLER_0_0_97 VDD VSS sg13g2_decap_8
+XFILLER_0_0_104 VDD VSS sg13g2_decap_8
+XFILLER_0_0_111 VDD VSS sg13g2_decap_8
+XFILLER_0_0_118 VDD VSS sg13g2_decap_8
+XFILLER_0_0_125 VDD VSS sg13g2_decap_8
+XFILLER_0_0_132 VDD VSS sg13g2_decap_8
+XFILLER_0_0_139 VDD VSS sg13g2_decap_8
+XFILLER_0_0_146 VDD VSS sg13g2_decap_8
+XFILLER_0_0_153 VDD VSS sg13g2_decap_8
+XFILLER_0_0_160 VDD VSS sg13g2_decap_8
+XFILLER_0_0_167 VDD VSS sg13g2_decap_8
+XFILLER_0_0_174 VDD VSS sg13g2_decap_8
+XFILLER_0_0_181 VDD VSS sg13g2_decap_8
+XFILLER_0_0_188 VDD VSS sg13g2_decap_8
+XFILLER_0_0_195 VDD VSS sg13g2_decap_4
+XFILLER_0_1_88 VDD VSS sg13g2_decap_8
+XFILLER_0_1_95 VDD VSS sg13g2_decap_8
+XFILLER_0_1_102 VDD VSS sg13g2_decap_8
+XFILLER_0_1_109 VDD VSS sg13g2_decap_8
+XFILLER_0_1_116 VDD VSS sg13g2_decap_8
+XFILLER_0_1_123 VDD VSS sg13g2_decap_8
+XFILLER_0_1_130 VDD VSS sg13g2_decap_8
+XFILLER_0_1_137 VDD VSS sg13g2_decap_8
+XFILLER_0_1_144 VDD VSS sg13g2_decap_8
+XFILLER_0_1_151 VDD VSS sg13g2_decap_8
+XFILLER_0_1_158 VDD VSS sg13g2_decap_8
+XFILLER_0_1_165 VDD VSS sg13g2_decap_8
+XFILLER_0_1_172 VDD VSS sg13g2_decap_8
+XFILLER_0_1_179 VDD VSS sg13g2_decap_8
+XFILLER_0_1_186 VDD VSS sg13g2_decap_8
+XFILLER_0_1_193 VDD VSS sg13g2_decap_8
+XFILLER_0_2_85 VDD VSS sg13g2_decap_8
+XFILLER_0_2_92 VDD VSS sg13g2_decap_8
+XFILLER_0_2_99 VDD VSS sg13g2_decap_8
+XFILLER_0_2_106 VDD VSS sg13g2_decap_8
+XFILLER_0_2_113 VDD VSS sg13g2_decap_8
+XFILLER_0_2_120 VDD VSS sg13g2_decap_8
+XFILLER_0_2_127 VDD VSS sg13g2_decap_8
+XFILLER_0_2_134 VDD VSS sg13g2_decap_8
+XFILLER_0_2_141 VDD VSS sg13g2_decap_8
+XFILLER_0_2_148 VDD VSS sg13g2_decap_8
+XFILLER_0_2_155 VDD VSS sg13g2_decap_8
+XFILLER_0_2_162 VDD VSS sg13g2_decap_8
+XFILLER_0_2_169 VDD VSS sg13g2_decap_8
+XFILLER_0_2_176 VDD VSS sg13g2_decap_8
+XFILLER_0_2_183 VDD VSS sg13g2_decap_8
+XFILLER_0_2_190 VDD VSS sg13g2_decap_8
+XFILLER_0_2_197 VDD VSS sg13g2_decap_4
+XFILLER_0_3_87 VDD VSS sg13g2_decap_8
+XFILLER_0_3_94 VDD VSS sg13g2_decap_8
+XFILLER_0_3_101 VDD VSS sg13g2_decap_8
+XFILLER_0_3_108 VDD VSS sg13g2_decap_8
+XFILLER_0_3_115 VDD VSS sg13g2_decap_8
+XFILLER_0_3_122 VDD VSS sg13g2_decap_8
+XFILLER_0_3_129 VDD VSS sg13g2_decap_8
+XFILLER_0_3_136 VDD VSS sg13g2_decap_8
+XFILLER_0_3_143 VDD VSS sg13g2_decap_8
+XFILLER_0_3_150 VDD VSS sg13g2_decap_8
+XFILLER_0_3_157 VDD VSS sg13g2_decap_8
+XFILLER_0_3_164 VDD VSS sg13g2_decap_8
+XFILLER_0_3_171 VDD VSS sg13g2_decap_8
+XFILLER_0_3_178 VDD VSS sg13g2_decap_8
+XFILLER_0_3_185 VDD VSS sg13g2_decap_8
+XFILLER_0_3_192 VDD VSS sg13g2_decap_8
+XFILLER_0_4_79 VDD VSS sg13g2_decap_8
+XFILLER_0_4_86 VDD VSS sg13g2_decap_8
+XFILLER_0_4_93 VDD VSS sg13g2_decap_8
+XFILLER_0_4_100 VDD VSS sg13g2_decap_8
+XFILLER_0_4_107 VDD VSS sg13g2_decap_8
+XFILLER_0_4_114 VDD VSS sg13g2_decap_8
+XFILLER_0_4_121 VDD VSS sg13g2_decap_8
+XFILLER_0_4_128 VDD VSS sg13g2_decap_8
+XFILLER_0_4_135 VDD VSS sg13g2_decap_8
+XFILLER_0_4_142 VDD VSS sg13g2_decap_8
+XFILLER_0_4_149 VDD VSS sg13g2_decap_8
+XFILLER_0_4_156 VDD VSS sg13g2_decap_8
+XFILLER_0_4_163 VDD VSS sg13g2_decap_8
+XFILLER_0_4_170 VDD VSS sg13g2_decap_8
+XFILLER_0_4_177 VDD VSS sg13g2_decap_8
+XFILLER_0_4_184 VDD VSS sg13g2_decap_8
+XFILLER_0_4_191 VDD VSS sg13g2_decap_8
+XFILLER_0_5_84 VDD VSS sg13g2_decap_8
+XFILLER_0_5_91 VDD VSS sg13g2_decap_8
+XFILLER_0_5_98 VDD VSS sg13g2_decap_8
+XFILLER_0_5_105 VDD VSS sg13g2_decap_8
+XFILLER_0_5_112 VDD VSS sg13g2_decap_8
+XFILLER_0_5_119 VDD VSS sg13g2_decap_8
+XFILLER_0_5_126 VDD VSS sg13g2_decap_8
+XFILLER_0_5_133 VDD VSS sg13g2_decap_8
+XFILLER_0_5_140 VDD VSS sg13g2_decap_8
+XFILLER_0_5_147 VDD VSS sg13g2_decap_8
+XFILLER_0_5_154 VDD VSS sg13g2_decap_8
+XFILLER_0_5_161 VDD VSS sg13g2_decap_8
+XFILLER_0_5_168 VDD VSS sg13g2_decap_8
+XFILLER_0_5_175 VDD VSS sg13g2_decap_8
+XFILLER_0_5_182 VDD VSS sg13g2_decap_8
+XFILLER_0_5_189 VDD VSS sg13g2_decap_8
+XFILLER_0_5_196 VDD VSS sg13g2_decap_4
+XFILLER_0_6_87 VDD VSS sg13g2_decap_4
+XFILLER_0_6_95 VDD VSS sg13g2_decap_8
+XFILLER_0_6_102 VDD VSS sg13g2_decap_4
+XFILLER_0_6_133 VDD VSS sg13g2_decap_8
+XFILLER_0_6_147 VDD VSS sg13g2_decap_8
+XFILLER_0_6_154 VDD VSS sg13g2_decap_8
+XFILLER_0_6_161 VDD VSS sg13g2_decap_8
+XFILLER_0_6_168 VDD VSS sg13g2_decap_8
+XFILLER_0_6_175 VDD VSS sg13g2_decap_8
+XFILLER_0_6_182 VDD VSS sg13g2_decap_8
+XFILLER_0_6_189 VDD VSS sg13g2_decap_4
+XFILLER_0_7_101 VDD VSS sg13g2_decap_4
+XFILLER_0_7_109 VDD VSS sg13g2_decap_8
+XFILLER_0_7_116 VDD VSS sg13g2_decap_8
+XFILLER_0_7_123 VDD VSS sg13g2_decap_8
+XFILLER_0_7_130 VDD VSS sg13g2_decap_8
+XFILLER_0_7_137 VDD VSS sg13g2_decap_8
+XFILLER_0_7_144 VDD VSS sg13g2_decap_8
+XFILLER_0_7_151 VDD VSS sg13g2_decap_8
+XFILLER_0_7_158 VDD VSS sg13g2_decap_8
+XFILLER_0_7_165 VDD VSS sg13g2_decap_8
+XFILLER_0_7_172 VDD VSS sg13g2_decap_4
+XFILLER_0_8_123 VDD VSS sg13g2_decap_8
+XFILLER_0_8_130 VDD VSS sg13g2_decap_8
+XFILLER_0_8_137 VDD VSS sg13g2_decap_8
+XFILLER_0_8_144 VDD VSS sg13g2_decap_8
+XFILLER_0_8_151 VDD VSS sg13g2_decap_8
+XFILLER_0_8_158 VDD VSS sg13g2_decap_8
+XFILLER_0_8_165 VDD VSS sg13g2_decap_8
+XFILLER_0_8_172 VDD VSS sg13g2_decap_4
+XFILLER_0_9_132 VDD VSS sg13g2_decap_8
+XFILLER_0_11_131 VDD VSS sg13g2_decap_4
+XFILLER_0_13_93 VDD VSS sg13g2_decap_8
+XFILLER_0_13_104 VDD VSS sg13g2_decap_8
+XFILLER_0_13_111 VDD VSS sg13g2_decap_8
+XFILLER_0_13_118 VDD VSS sg13g2_decap_8
+XFILLER_0_13_125 VDD VSS sg13g2_decap_4
+XFILLER_0_13_133 VDD VSS sg13g2_decap_8
+XFILLER_0_13_140 VDD VSS sg13g2_decap_8
+XFILLER_0_13_147 VDD VSS sg13g2_decap_8
+XFILLER_0_13_197 VDD VSS sg13g2_decap_4
+XFILLER_0_14_145 VDD VSS sg13g2_decap_8
+XFILLER_0_14_161 VDD VSS sg13g2_decap_8
+XFILLER_0_14_173 VDD VSS sg13g2_decap_8
+XFILLER_0_15_84 VDD VSS sg13g2_decap_8
+XFILLER_0_15_97 VDD VSS sg13g2_decap_4
+XFILLER_0_15_106 VDD VSS sg13g2_decap_8
+XFILLER_0_15_113 VDD VSS sg13g2_decap_8
+XFILLER_0_15_120 VDD VSS sg13g2_decap_8
+XFILLER_0_15_127 VDD VSS sg13g2_decap_8
+XFILLER_0_15_162 VDD VSS sg13g2_decap_8
+XFILLER_0_16_112 VDD VSS sg13g2_decap_8
+XFILLER_0_16_119 VDD VSS sg13g2_decap_8
+XFILLER_0_16_126 VDD VSS sg13g2_decap_8
+XFILLER_0_16_133 VDD VSS sg13g2_decap_8
+XFILLER_0_16_156 VDD VSS sg13g2_decap_4
+XFILLER_0_16_193 VDD VSS sg13g2_decap_8
+XFILLER_0_17_81 VDD VSS sg13g2_decap_8
+XFILLER_0_17_88 VDD VSS sg13g2_decap_8
+XFILLER_0_17_95 VDD VSS sg13g2_decap_4
+XFILLER_0_17_104 VDD VSS sg13g2_decap_8
+XFILLER_0_17_111 VDD VSS sg13g2_decap_8
+XFILLER_0_17_118 VDD VSS sg13g2_decap_8
+XFILLER_0_17_125 VDD VSS sg13g2_decap_8
+XFILLER_0_17_132 VDD VSS sg13g2_decap_8
+XFILLER_0_17_139 VDD VSS sg13g2_decap_8
+XFILLER_0_17_146 VDD VSS sg13g2_decap_8
+XFILLER_0_17_153 VDD VSS sg13g2_decap_8
+XFILLER_0_17_160 VDD VSS sg13g2_decap_8
+XFILLER_0_17_167 VDD VSS sg13g2_decap_8
+XFILLER_0_17_174 VDD VSS sg13g2_decap_8
+XFILLER_0_17_181 VDD VSS sg13g2_decap_8
+XFILLER_0_18_99 VDD VSS sg13g2_decap_8
+XFILLER_0_18_106 VDD VSS sg13g2_decap_8
+XFILLER_0_18_113 VDD VSS sg13g2_decap_8
+XFILLER_0_18_120 VDD VSS sg13g2_decap_8
+XFILLER_0_18_127 VDD VSS sg13g2_decap_8
+XFILLER_0_18_134 VDD VSS sg13g2_decap_8
+XFILLER_0_18_141 VDD VSS sg13g2_decap_8
+XFILLER_0_18_157 VDD VSS sg13g2_decap_8
+XFILLER_0_18_164 VDD VSS sg13g2_decap_8
+XFILLER_0_19_74 VDD VSS sg13g2_decap_8
+XFILLER_0_19_81 VDD VSS sg13g2_decap_8
+XFILLER_0_19_88 VDD VSS sg13g2_decap_8
+XFILLER_0_19_95 VDD VSS sg13g2_decap_8
+XFILLER_0_19_102 VDD VSS sg13g2_decap_8
+XFILLER_0_19_109 VDD VSS sg13g2_decap_8
+XFILLER_0_19_116 VDD VSS sg13g2_decap_8
+XFILLER_0_19_123 VDD VSS sg13g2_decap_8
+XFILLER_0_19_188 VDD VSS sg13g2_decap_4
+XFILLER_0_20_81 VDD VSS sg13g2_decap_8
+XFILLER_0_20_112 VDD VSS sg13g2_decap_8
+XFILLER_0_20_119 VDD VSS sg13g2_decap_8
+XFILLER_0_20_126 VDD VSS sg13g2_decap_8
+XFILLER_0_20_133 VDD VSS sg13g2_decap_8
+XFILLER_0_20_140 VDD VSS sg13g2_decap_8
+XFILLER_0_20_147 VDD VSS sg13g2_decap_8
+XFILLER_0_20_154 VDD VSS sg13g2_decap_8
+XFILLER_0_20_161 VDD VSS sg13g2_decap_8
+XFILLER_0_20_168 VDD VSS sg13g2_decap_8
+XFILLER_0_20_175 VDD VSS sg13g2_decap_8
+XFILLER_0_20_182 VDD VSS sg13g2_decap_4
+XFILLER_0_21_0 VDD VSS sg13g2_decap_8
+XFILLER_0_21_7 VDD VSS sg13g2_decap_4
+XFILLER_0_21_15 VDD VSS sg13g2_decap_8
+XFILLER_0_21_22 VDD VSS sg13g2_decap_4
+XFILLER_0_21_44 VDD VSS sg13g2_decap_4
+XFILLER_0_21_65 VDD VSS sg13g2_decap_8
+XFILLER_0_21_72 VDD VSS sg13g2_decap_8
+XFILLER_0_21_79 VDD VSS sg13g2_decap_8
+XFILLER_0_21_86 VDD VSS sg13g2_decap_8
+XFILLER_0_21_93 VDD VSS sg13g2_decap_8
+XFILLER_0_21_105 VDD VSS sg13g2_decap_8
+XFILLER_0_21_112 VDD VSS sg13g2_decap_8
+XFILLER_0_21_119 VDD VSS sg13g2_decap_8
+XFILLER_0_21_126 VDD VSS sg13g2_decap_4
+XFILLER_0_21_156 VDD VSS sg13g2_decap_8
+XFILLER_0_21_163 VDD VSS sg13g2_decap_8
+XFILLER_0_21_170 VDD VSS sg13g2_decap_4
+XFILLER_0_22_0 VDD VSS sg13g2_decap_8
+XFILLER_0_22_7 VDD VSS sg13g2_decap_8
+XFILLER_0_22_14 VDD VSS sg13g2_decap_8
+XFILLER_0_22_56 VDD VSS sg13g2_decap_4
+XFILLER_0_22_112 VDD VSS sg13g2_decap_8
+XFILLER_0_22_119 VDD VSS sg13g2_decap_8
+XFILLER_0_22_126 VDD VSS sg13g2_decap_8
+XFILLER_0_22_159 VDD VSS sg13g2_decap_8
+XFILLER_0_22_166 VDD VSS sg13g2_decap_8
+XFILLER_0_22_173 VDD VSS sg13g2_decap_8
+XFILLER_0_22_180 VDD VSS sg13g2_decap_8
+XFILLER_0_22_187 VDD VSS sg13g2_decap_8
+XFILLER_0_22_194 VDD VSS sg13g2_decap_8
+XFILLER_0_23_0 VDD VSS sg13g2_decap_8
+XFILLER_0_23_7 VDD VSS sg13g2_decap_8
+XFILLER_0_23_14 VDD VSS sg13g2_decap_8
+XFILLER_0_23_21 VDD VSS sg13g2_decap_8
+XFILLER_0_23_28 VDD VSS sg13g2_decap_8
+XFILLER_0_23_35 VDD VSS sg13g2_decap_8
+XFILLER_0_23_42 VDD VSS sg13g2_decap_8
+XFILLER_0_23_49 VDD VSS sg13g2_decap_8
+XFILLER_0_23_56 VDD VSS sg13g2_decap_8
+XFILLER_0_23_63 VDD VSS sg13g2_decap_8
+XFILLER_0_23_93 VDD VSS sg13g2_decap_8
+XFILLER_0_23_100 VDD VSS sg13g2_decap_8
+XFILLER_0_23_107 VDD VSS sg13g2_decap_8
+XFILLER_0_23_114 VDD VSS sg13g2_decap_8
+XFILLER_0_23_121 VDD VSS sg13g2_decap_8
+XFILLER_0_23_128 VDD VSS sg13g2_decap_4
+XFILLER_0_23_144 VDD VSS sg13g2_decap_4
+XFILLER_0_23_159 VDD VSS sg13g2_decap_8
+XFILLER_0_23_166 VDD VSS sg13g2_decap_8
+XFILLER_0_23_173 VDD VSS sg13g2_decap_8
+XFILLER_0_23_180 VDD VSS sg13g2_decap_8
+XFILLER_0_23_187 VDD VSS sg13g2_decap_8
+XFILLER_0_23_194 VDD VSS sg13g2_decap_8
+
+.ends
+.end
